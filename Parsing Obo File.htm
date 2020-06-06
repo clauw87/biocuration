@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://www.biostars.org/p/45366/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="shortcut icon" href="https://www.biostars.org/static/favicon.ico">
+
+    <title>
+    Parsing Obo File
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="./Parsing Obo File_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./Parsing Obo File_files/font-awesome.css" rel="stylesheet">
+
+    <script src="./Parsing Obo File_files/pubads_impl_rendering_2020032401.js"></script><script type="text/javascript" async="" src="./Parsing Obo File_files/ga.js"></script><script async="" type="text/javascript" src="./Parsing Obo File_files/gpt.js"></script><script src="./Parsing Obo File_files/jquery.min.js"></script>
+    <script src="./Parsing Obo File_files/bootstrap.min.js"></script>
+
+    
+    
+
+        
+        <link rel="stylesheet" href="./Parsing Obo File_files/a263178e5ed2.css" type="text/css">
+
+        <script type="text/javascript" src="./Parsing Obo File_files/6f945e6b21cf.js"></script>
+
+    
+
+    
+
+    <script type="text/javascript" src="./Parsing Obo File_files/Markdown.Converter.js"></script>
+    <script type="text/javascript" src="./Parsing Obo File_files/Markdown.Sanitizer.js"></script>
+    <script type="text/javascript" src="./Parsing Obo File_files/Markdown.Editor.js"></script>
+
+    
+    <link rel="stylesheet" href="./Parsing Obo File_files/markdown.css">
+
+
+
+    <script type="text/javascript">
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') +
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type="text/javascript">
+googletag.cmd.push(function() {
+googletag.pubads().collapseEmptyDivs(true);
+googletag.defineSlot('/64550467/special_sidebar', [220, 250], 'special_sidebar').addService(googletag.pubads());
+googletag.defineSlot('/64550467/Leaderboard', [728, 90], 'div-gpt-ad-1412001329349-0').addService(googletag.pubads());
+googletag.defineSlot('/64550467/Sidebar-220x250', [220, 250], 'div-gpt-ad-1412001329349-1').addService(googletag.pubads());
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-0135720358970849",
+    enable_page_level_ads: true
+  });
+</script>
+
+
+
+    <script type="application/javascript">
+        
+            USER_ID = null;
+        
+        TITLE_SEARCH_URL = "/local/search/title/"
+        POST_DISPLAY_URL = "/p/"
+    </script>
+<link rel="preload" href="https://adservice.google.com.cu/adsid/integrator.js?domain=www.biostars.org" as="script"><script type="text/javascript" src="https://adservice.google.com.cu/adsid/integrator.js?domain=www.biostars.org"></script><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=www.biostars.org" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=www.biostars.org"></script><script src="./Parsing Obo File_files/pubads_impl_2020032401.js" async=""></script><link rel="prefetch" href="https://tpc.googlesyndication.com/safeframe/1-0-37/html/container.html"></head>
+<body data-gr-c-s-loaded="true">
+
+<div class="container" id="content">
+
+    
+    
+    
+
+
+<div class="row visible-lg visible-md">
+    <div class="col-md-12 text-center" id="topnav">
+            
+                <div class="col-md-1 ">
+                    <a href="https://www.biostars.org/t/Latest/">Latest</a>
+                </div>
+            
+                <div class="col-md-1 ">
+                    <a href="https://www.biostars.org/t/Open/">Open</a>
+                </div>
+            
+                <div class="col-md-1 ">
+                    <a href="https://www.biostars.org/t/RNA-Seq/">RNA-Seq</a>
+                </div>
+            
+                <div class="col-md-1 ">
+                    <a href="https://www.biostars.org/t/ChIP-Seq/">ChIP-Seq</a>
+                </div>
+            
+                <div class="col-md-1 ">
+                    <a href="https://www.biostars.org/t/SNP/">SNP</a>
+                </div>
+            
+                <div class="col-md-1 ">
+                    <a href="https://www.biostars.org/t/Assembly/">Assembly</a>
+                </div>
+            
+                <div class="col-md-1 ">
+                    <a href="https://www.biostars.org/t/Tutorials/">Tutorials</a>
+                </div>
+            
+                <div class="col-md-1 ">
+                    <a href="https://www.biostars.org/t/Tools/">Tools</a>
+                </div>
+            
+                <div class="col-md-1 ">
+                    <a href="https://www.biostars.org/t/Jobs/">Jobs</a>
+                </div>
+            
+                <div class="col-md-1 ">
+                    <a href="https://www.biostars.org/t/Forum/">Forum</a>
+                </div>
+            
+            <div class="col-md-1 "><a href="https://www.biostars.org/planet/">Planet</a></div>
+            <div class="col-md-1 "><a href="https://www.biostars.org/t/">All »</a></div>
+        
+    </div>
+</div>
+
+<div class="row visible-sm visible-xs">
+
+    <div class="col-xs-4">
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                 View Posts 
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                
+                    <li>
+                        <a href="https://www.biostars.org/t/Latest">Latest</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://www.biostars.org/t/Open">Open</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://www.biostars.org/t/RNA-Seq">RNA-Seq</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://www.biostars.org/t/ChIP-Seq">ChIP-Seq</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://www.biostars.org/t/SNP">SNP</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://www.biostars.org/t/Assembly">Assembly</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://www.biostars.org/t/Tutorials">Tutorials</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://www.biostars.org/t/Tools">Tools</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://www.biostars.org/t/Jobs">Jobs</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://www.biostars.org/t/Forum">Forum</a>
+                    </li>
+                
+                <li><a href="https://www.biostars.org/planet/">Planet</a></li>
+                <li><a href="https://www.biostars.org/t/">All »</a></li>
+            </ul>
+        </div>
+    </div>
+
+        <div class="col-xs-4 text-center" style="margin-bottom:5px">
+        <a role="button" class="btn btn-primary" href="https://www.biostars.org/">
+            <i class="fa fa-star fa-1x"></i> Home </a>
+        
+
+    </div>
+
+    <div class="col-xs-4 ">
+        <div class="btn-group pull-right">
+
+            
+                <div>
+                    <a class="btn btn-primary active" role="button" href="https://www.biostars.org/site/login/">
+                        <i class="fa fa-user fa-1x"></i> Log In
+                    </a>
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="row visible-lg visible-md">
+
+    <div class="col-md-12" id="navbar">
+
+        <div class="col-lg-3 visible-lg" id="logo">
+            <a href="https://www.biostars.org/"><img src="./Parsing Obo File_files/biostar2.logo.png"></a>
+        </div>
+
+        <div class="col-md-3 visible-md text-center">
+            <a href="https://www.biostars.org/">
+                </a><a href="https://www.biostars.org/"><img style="width:200px; height: auto;" src="./Parsing Obo File_files/biostar2.logo.png"></a>
+            
+        </div>
+
+        
+
+            <div class="col-md-9 top text-center">
+                 Welcome to Biostar!
+                <span class="pull-right">
+                    <a href="https://www.biostars.org/info/about/">about</a> • <a href="https://www.biostars.org/info/faq/">faq</a>
+                    • <a href="https://www.biostars.org/info/rss/">rss <i class="fa fa-rss"></i></a>
+                </span>
+            </div>
+
+            <div class="col-md-2 col-md-offset-10 mid ">
+                <a href="https://www.biostars.org/user/list/">
+                    <div><i class="fa fa-globe"></i>
+                    </div>
+                    <div>Community</div>
+                </a>
+            </div>
+
+            <div class="col-md-2 mid ">
+                <b><a href="https://www.biostars.org/site/login/">
+                    <div><i class="fa fa-user fa-1x"></i></div>
+                    <div>Log In</div>
+                </a></b>
+            </div>
+
+            <div class="col-md-2 mid ">
+                <b><a href="https://www.biostars.org/accounts/signup/">
+                    <div><i class="fa fa-arrow-circle-up fa-1x"></i></div>
+                    <div>Sign Up</div>
+                </a></b>
+            </div>
+
+            <div class="col-md-2 mid newpost">
+                <a href="https://www.biostars.org/p/new/post/" class="navitem ">
+                    <div><i class="fa fa-plus-circle fa-1x"></i></div>
+                    <div>Add New Post</div>
+                </a>
+            </div>
+
+        
+    </div>
+</div>
+
+
+    
+
+    
+    
+
+    
+    
+
+    
+
+    <div class="row" itemscope="" itemtype="http://schema.org/QAPage">
+
+        <div class="col-xs-12 col-md-9">
+
+            <div id="post-details">
+                
+                <span itemscope="" itemtype="http://schema.org/Question">
+                    
+
+<div class="post-body Open clearfix">
+
+
+    
+        
+
+    <div align="center" style="padding-bottom:1em">
+        <!-- Leaderboard 728x90 -->
+        <div id="div-gpt-ad-1412001329349-0" style="width: 728px; height: 90px; display: none;">
+            <script type="text/javascript">
+                googletag.cmd.push(function () {
+                    googletag.display('div-gpt-ad-1412001329349-0');
+                });
+            </script>
+        <div id="google_ads_iframe_/64550467/Leaderboard_0__container__" style="border: 0pt none; width: 728px; height: 90px;"></div></div>
+    </div>
+
+
+
+        <div class="title">Question: <span itemprop="name">Parsing Obo File</span></div>
+
+    
+
+    <div class="post vote-box visible-lg visible-md" data-post_id="45366">
+
+
+
+        <div class="vote mark off tip" data-toggle="tooltip" data-placement="top" data-type="vote" title="" data-original-title="Upvote!">
+            <i class="fa fa-thumbs-o-up fa-2x"></i></div>
+
+        <div class="count" itemprop="voteCount">2</div>
+
+        <div class="vote mark off tip" data-toggle="tooltip" data-placement="top" data-type="bookmark" title="" data-original-title="Bookmark!">
+            <i class="fa fa-book fa-2x"></i>
+        </div>
+
+        
+
+
+
+    </div>
+
+    <div>
+
+        <a name="45366"></a>
+        
+        <div class="content">
+
+            
+
+
+
+
+<div class="col-xs-3 col-md-2 box pull-right text-center visible-lg visible-md">
+        <div><a href="https://www.biostars.org/u/5035/"><img src="./Parsing Obo File_files/09e21c3920fb86e0047474d0e776969e" alt="gravatar for pradeep"></a></div>
+        <div class="ago">7.9 years ago by</div>
+        <div class="uname">
+
+
+<a href="https://www.biostars.org/u/5035/">pradeep</a> • <b>20</b></div>
+        <div class="loc"></div>
+</div>
+
+<div class="box text-center visible-sm visible-xs">
+    <div class="uname">
+
+
+<a href="https://www.biostars.org/u/5035/">pradeep</a> • <b>20</b> wrote:</div>
+</div>
+
+            <span itemprop="text"><p>Want to parse OBO and do the following:
+1. get nodes in each level.
+2. get nodes all the nodes that exist in levels below 3 till leaf. 
+Where root is always a node in level 3 for all the nodes below it.</p>
+
+<p>Can some one please help me to write code in Java. </p>
+
+<p>I tried using GO4J but not able to figure out how to use the API's. 
+Please let me know if there is any other library that can help me to do the above and other OBO graph navigation.</p>
+
+<p>Thanking you,</p>
+</span>
+
+
+            <div class="clearfix">
+                
+                    <div class="tags clearfix" style="margin-bottom:0.5em;">
+                        
+                            <a class="tag" href="https://www.biostars.org/t/parsing/">parsing</a>
+                        
+
+                    • 5.6k views
+
+                    </div>
+                
+
+                
+                
+
+<div class="post-action">
+
+    <span class="label label-default add-comment" data-value="45366" id="C45366">ADD COMMENT</span>
+
+    • <a href="https://www.biostars.org/p/45366/">link</a>
+    
+
+    
+        
+        •
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-default btn-xs dropdown-toggle" id="F45366" data-toggle="dropdown">
+                
+                    Not following
+                
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu dropup" role="menu">
+
+                <li><a href="https://www.biostars.org/local/sub/45366/local/">Follow via messages</a></li>
+                <li><a href="https://www.biostars.org/local/sub/45366/email/">Follow via email</a></li>
+                <li><a href="https://www.biostars.org/local/sub/45366/nofollow/">Do not follow</a></li>
+            </ul>
+        </div>
+    
+
+    <span class="userlink muted">
+            
+        written <span itemprop="dateCreated" content="2012-05-21T09:17:47.167597-05:00">
+        7.9 years ago</span> by 
+
+
+<a href="https://www.biostars.org/u/5035/">pradeep</a> • <b>20</b>
+    </span>
+</div>
+
+
+            </div>
+
+            
+            <div class="comment" itemprop="comment">
+                
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+                </span>
+
+
+                
+                
+                    <span itemscope="" itemtype="http://schema.org/Answer">
+                        
+
+<div class="post-body Open clearfix">
+
+
+    
+
+    <div class="post vote-box visible-lg visible-md" data-post_id="45505">
+
+
+
+        <div class="vote mark off tip" data-toggle="tooltip" data-placement="top" data-type="vote" title="" data-original-title="Upvote!">
+            <i class="fa fa-thumbs-o-up fa-2x"></i></div>
+
+        <div class="count" itemprop="voteCount">2</div>
+
+        <div class="vote mark off tip" data-toggle="tooltip" data-placement="top" data-type="bookmark" title="" data-original-title="Bookmark!">
+            <i class="fa fa-book fa-2x"></i>
+        </div>
+
+        
+
+
+
+    </div>
+
+    <div>
+
+        <a name="45505"></a>
+        
+        <div class="content">
+
+            
+
+
+
+
+<div class="col-xs-3 col-md-2 box pull-right text-center visible-lg visible-md">
+        <div><a href="https://www.biostars.org/u/87/"><img src="./Parsing Obo File_files/a553edf63b74a68394e09ab23e5fdd17.png" alt="gravatar for Khader Shameer"></a></div>
+        <div class="ago">7.9 years ago by</div>
+        <div class="uname">
+
+
+<a href="https://www.biostars.org/u/87/">Khader Shameer</a> ♦ <b>18k</b></div>
+        <div class="loc">Manhattan, NY</div>
+</div>
+
+<div class="box text-center visible-sm visible-xs">
+    <div class="uname">
+
+
+<a href="https://www.biostars.org/u/87/">Khader Shameer</a> ♦ <b>18k</b> wrote:</div>
+</div>
+
+            <span itemprop="text"><p>If you are Perl fan, you can also do parsing of obo files using <a rel="nofollow" href="http://search.cpan.org/dist/ONTO-PERL/">ONTO-PERL</a></p>
+
+<p><em>1. get nodes in each level</em></p>
+
+<p>Use <a rel="nofollow" href="http://search.cpan.org/dist/ONTO-PERL/scripts/get_child_terms.pl">this</a> script to extract child terms for given term / ID</p>
+
+<p><em>2. get nodes all the nodes that exist in levels below 3 till leaf. Where root is always a node in level 3 for all the nodes below it.</em></p>
+
+<p>Not sure what you are trying to do in this step. You can do most of the .obo parsing using this module. It is one of the extensively documented Perl module that I have used. See Documentations sections and various examples. </p>
+
+<p>Manuscript <a rel="nofollow" href="http://bioinformatics.oxfordjournals.org/content/24/6/885">here</a></p>
+</span>
+
+
+            <div class="clearfix">
+                
+
+                
+                
+
+<div class="post-action">
+
+    <span class="label label-default add-comment" data-value="45505" id="C45505">ADD COMMENT</span>
+
+    • <a href="https://www.biostars.org/p/45366/#45505">link</a>
+    
+
+    
+
+    <span class="userlink muted">
+            
+            modified 7.9 years ago
+            
+            •
+        
+        written <span itemprop="dateCreated" content="2012-05-22T21:23:28.958196-05:00">
+        7.9 years ago</span> by 
+
+
+<a href="https://www.biostars.org/u/87/">Khader Shameer</a> ♦ <b>18k</b>
+    </span>
+</div>
+
+
+            </div>
+
+            
+            <div class="comment" itemprop="comment">
+                
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+                    </span>
+                
+                    <span itemscope="" itemtype="http://schema.org/Answer">
+                        
+
+<div class="post-body Open clearfix">
+
+
+    
+
+    <div class="post vote-box visible-lg visible-md" data-post_id="45376">
+
+
+
+        <div class="vote mark off tip" data-toggle="tooltip" data-placement="top" data-type="vote" title="" data-original-title="Upvote!">
+            <i class="fa fa-thumbs-o-up fa-2x"></i></div>
+
+        <div class="count" itemprop="voteCount">1</div>
+
+        <div class="vote mark off tip" data-toggle="tooltip" data-placement="top" data-type="bookmark" title="" data-original-title="Bookmark!">
+            <i class="fa fa-book fa-2x"></i>
+        </div>
+
+        
+
+
+
+    </div>
+
+    <div>
+
+        <a name="45376"></a>
+        
+        <div class="content">
+
+            
+
+
+
+
+<div class="col-xs-3 col-md-2 box pull-right text-center visible-lg visible-md">
+        <div><a href="https://www.biostars.org/u/30/"><img src="./Parsing Obo File_files/61200477cf8983809ec152f484750204.jpeg" alt="gravatar for Pierre Lindenbaum"></a></div>
+        <div class="ago">7.9 years ago by</div>
+        <div class="uname">
+
+
+<a href="https://www.biostars.org/u/30/">Pierre Lindenbaum</a> ♦ <b>127k</b></div>
+        <div class="loc">France/Nantes/Institut du Thorax - INSERM UMR1087</div>
+</div>
+
+<div class="box text-center visible-sm visible-xs">
+    <div class="uname">
+
+
+<a href="https://www.biostars.org/u/30/">Pierre Lindenbaum</a> ♦ <b>127k</b> wrote:</div>
+</div>
+
+            <span itemprop="text"><p>Here is a simple-and-stupid OBO parser , it could be used to do what you want:</p>
+
+<p><a rel="nofollow" href="https://gist.github.com/2762967">https://gist.github.com/2762967</a></p>
+
+<hr>
+
+<p>test:</p>
+
+<pre><code>$ curl -s "<a rel="nofollow" href="http://www.geneontology.org/ontology/obo_format_1_2/gene_ontology_ext.obo">http://www.geneontology.org/ontology/obo_format_1_2/gene_ontology_ext.obo</a>" | java Biostar45366 | tail -20
+
+11  GO:0048910  afferent axon development in anterior lateral line nerve    [GO:0048893]
+11  GO:0070979  protein K11-linked ubiquitination   [GO:0000209]
+11  GO:0070936  protein K48-linked ubiquitination   [GO:0000209]
+11  GO:0017116  single-stranded DNA-dependent ATP-dependent DNA helicase activity   [GO:0043142, GO:0004003]
+11  GO:0000167  activation of MAPKKK activity involved in osmosensory signaling pathway [GO:0000185]
+11  GO:0000197  activation of MAPKKK activity involved in cell wall biogenesis  [GO:0000185]
+11  GO:0031449  regulation of slow-twitch skeletal muscle fiber contraction [GO:0014724]
+11  GO:0031446  regulation of fast-twitch skeletal muscle fiber contraction [GO:0014724]
+11  GO:0035752  lysosomal lumen pH elevation    [GO:0035751, GO:0051454]
+12  GO:0008635  activation of cysteine-type endopeptidase activity involved in apoptotic process by cytochrome c    [GO:0006919]
+12  GO:0001310  extrachromosomal rDNA circle accumulation involved in replicative cell aging    [GO:0001307]
+12  GO:0070244  negative regulation of thymocyte apoptotic process  [GO:0070233, GO:0070243]
+12  GO:0070245  positive regulation of thymocyte apoptotic process  [GO:0070243, GO:0070234]
+12  GO:0090390  phagosome acidification involved in apoptotic cell clearance    [GO:0090383]
+
+GO:0071948  activation-induced B cell apoptotic process [GO:0001783]
+GO:0001783  B cell apoptotic process    [GO:0070227]
+GO:0002516  B cell deletion [GO:0001783]
+GO:0002901  mature B cell apoptotic process [GO:0001783]
+GO:0002454  peripheral B cell deletion  [GO:0002516]
+GO:0002342  central B cell deletion [GO:0002516]
+</code></pre>
+</span>
+
+
+            <div class="clearfix">
+                
+
+                
+                
+
+<div class="post-action">
+
+    <span class="label label-default add-comment" data-value="45376" id="C45376">ADD COMMENT</span>
+
+    • <a href="https://www.biostars.org/p/45366/#45376">link</a>
+    
+
+    
+
+    <span class="userlink muted">
+            
+        written <span itemprop="dateCreated" content="2012-05-21T11:43:12.866385-05:00">
+        7.9 years ago</span> by 
+
+
+<a href="https://www.biostars.org/u/30/">Pierre Lindenbaum</a> ♦ <b>127k</b>
+    </span>
+</div>
+
+
+            </div>
+
+            
+            <div class="comment" itemprop="comment">
+                
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+                    </span>
+                
+                    <span itemscope="" itemtype="http://schema.org/Answer">
+                        
+
+<div class="post-body Open clearfix">
+
+
+    
+
+    <div class="post vote-box visible-lg visible-md" data-post_id="45412">
+
+
+
+        <div class="vote mark off tip" data-toggle="tooltip" data-placement="top" data-type="vote" title="" data-original-title="Upvote!">
+            <i class="fa fa-thumbs-o-up fa-2x"></i></div>
+
+        <div class="count" itemprop="voteCount">0</div>
+
+        <div class="vote mark off tip" data-toggle="tooltip" data-placement="top" data-type="bookmark" title="" data-original-title="Bookmark!">
+            <i class="fa fa-book fa-2x"></i>
+        </div>
+
+        
+
+
+
+    </div>
+
+    <div>
+
+        <a name="45412"></a>
+        
+        <div class="content">
+
+            
+
+
+
+
+<div class="col-xs-3 col-md-2 box pull-right text-center visible-lg visible-md">
+        <div><a href="https://www.biostars.org/u/5035/"><img src="./Parsing Obo File_files/09e21c3920fb86e0047474d0e776969e" alt="gravatar for pradeep"></a></div>
+        <div class="ago">7.9 years ago by</div>
+        <div class="uname">
+
+
+<a href="https://www.biostars.org/u/5035/">pradeep</a> • <b>20</b></div>
+        <div class="loc"></div>
+</div>
+
+<div class="box text-center visible-sm visible-xs">
+    <div class="uname">
+
+
+<a href="https://www.biostars.org/u/5035/">pradeep</a> • <b>20</b> wrote:</div>
+</div>
+
+            <span itemprop="text"><p>Thank you so much. This should indeed help.</p>
+
+<p>Will get back to you.</p>
+</span>
+
+
+            <div class="clearfix">
+                
+
+                
+                
+
+<div class="post-action">
+
+    <span class="label label-default add-comment" data-value="45412" id="C45412">ADD COMMENT</span>
+
+    • <a href="https://www.biostars.org/p/45366/#45412">link</a>
+    
+
+    
+
+    <span class="userlink muted">
+            
+        written <span itemprop="dateCreated" content="2012-05-21T23:11:50.575859-05:00">
+        7.9 years ago</span> by 
+
+
+<a href="https://www.biostars.org/u/5035/">pradeep</a> • <b>20</b>
+    </span>
+</div>
+
+
+            </div>
+
+            
+            <div class="comment" itemprop="comment">
+                <div class="indent">
+
+<a name="45506"></a>
+<div class="entry Open  clearfix">
+
+    <div class="comment vote-box" data-post_id="45506">
+        <div class="vote mark off " data-type="vote" title="Upvote!">
+            <i class="fa fa-thumbs-o-up fa-1x"></i></div>
+        <div class="count">1</div>
+    </div>
+
+   <p>Pradeep: This should be a comment, not an answer. Please repost this as a comment and delete this "answer".</p>
+
+
+    
+    
+
+<div class="post-action">
+
+    <span class="label label-default add-comment" data-value="45506" id="C45506">ADD REPLY</span>
+
+    • <a href="https://www.biostars.org/p/45366/#45506">link</a>
+    
+
+    
+
+    <span class="userlink muted">
+            
+        written <span itemprop="dateCreated" content="2012-05-22T21:26:03.396638-05:00">
+        7.9 years ago</span> by 
+
+
+<a href="https://www.biostars.org/u/87/">Khader Shameer</a> ♦ <b>18k</b>
+    </span>
+</div>
+
+
+</div>
+</div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+                    </span>
+                
+
+                
+                <span id="csrf_token"><input type="hidden" name="csrfmiddlewaretoken" value="Uu1dKC9fQVmLpks8vpFt2ckv10mVByXe"></span>
+
+                
+                <div>
+
+                    
+
+                    
+                    
+                        <div class="alert alert-info">
+                            Please <a href="https://www.biostars.org/site/login/">log in</a> to add an answer.
+                        </div>
+                    
+
+                    
+                    
+
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-3 sidebar">
+            
+                <h4>Similar posts • <a href="https://www.biostars.org/local/search/page/">Search »</a></h4>
+
+                
+
+                <ul class="more-like-this">
+                    
+                        
+                            
+                        
+                        
+                    
+                        
+                            
+                                <li>
+                                    <a href="https://www.biostars.org/p/45559/">How To Get The Parent Of Each 3Rd Level Node Using The Obo Parser </a>
+
+                                    <div class="peek">I am trying to read a obo file and able to parse it. But how can I get the parent of each node re...</div>
+                                </li>
+                            
+                        
+                        
+                    
+                        
+                            
+                                <li>
+                                    <a href="https://www.biostars.org/p/175233/">How to get list of all GO terms in each ontology </a>
+
+                                    <div class="peek">Hi,&nbsp;
+
+I want to get lists of all GO terms in each ontology for the a GO release. The GO consortiu...</div>
+                                </li>
+                            
+                        
+                        
+                            
+
+                        
+                    
+                        
+                            
+                                <li>
+                                    <a href="https://www.biostars.org/p/422511/">error withstatistic "t" and "ks" on topGO </a>
+
+                                    <div class="peek">Dear all,
+
+I am struggeling with the statistics test using topGO.
+
+I have searched on the net and...</div>
+                                </li>
+                            
+                        
+                        
+                    
+                        
+                            
+                                <li>
+                                    <a href="https://www.biostars.org/p/256578/">How to calculate the distance of two node from .obo format file </a>
+
+                                    <div class="peek">I have a tree file (.obo format file). 
+I want to calculate the distance between two leaf nodes' ...</div>
+                                </li>
+                            
+                        
+                        
+                    
+                        
+                            
+                        
+                        
+                    
+                        
+                            
+                        
+                        
+                    
+                        
+                            
+                                <li>
+                                    <a href="https://www.biostars.org/p/51261/">Error Message About The Owlparser.Pl </a>
+
+                                    <div class="peek">I am new to use Perl. My  purpose  is to convert one owl file into obo.
+step 1. I set up perl  en...</div>
+                                </li>
+                            
+                        
+                        
+                    
+                        
+                            
+                        
+                        
+                    
+                        
+                            
+                        
+                        
+                    
+                        
+                            
+                                <li>
+                                    <a href="https://www.biostars.org/p/273432/">SNPs; entrez utilities </a>
+
+                                    <div class="peek">`enter code here`Dear ALL,
+
+I am trying to get all SNPs from the 5' and 3' UTRs of the RNAs of th...</div>
+                                </li>
+                            
+                        
+                        
+                    
+                        
+                            
+                                <li>
+                                    <a href="https://www.biostars.org/p/1894/">Mzidentml'S Non-Mapping Obo </a>
+
+                                    <div class="peek">Under my Professor's suggestion, I [created][1] a [pepXML][2] to [mzIdentML][3] converter in Ruby...</div>
+                                </li>
+                            
+                        
+                        
+                    
+                        
+                            
+                                <li>
+                                    <a href="https://www.biostars.org/p/387214/">Options for labeling pathways with higher-order ontologies </a>
+
+                                    <div class="peek">I have some RNA sequencing data on which I have run several pathway analyses.
+
+I've noticed that ...</div>
+                                </li>
+                            
+                        
+                        
+                    
+                        
+                            
+                        
+                        
+                    
+                        
+                            
+                        
+                        
+                    
+                        
+                            
+                        
+                        
+                    
+                        
+                            
+                                <li>
+                                    <a href="https://www.biostars.org/p/19182/">How To Parse Data From An Owl File </a>
+
+                                    <div class="peek">Hello, I am working on a project and I need to use the cell line ontology(CLO).
+I tried accessing...</div>
+                                </li>
+                            
+                        
+                        
+                    
+                        
+                            
+                        
+                        
+                    
+                        
+                            
+                                <li>
+                                    <a href="https://www.biostars.org/p/44705/">Parsing Dom Document From Omim Restful Web Services </a>
+
+                                    <div class="peek">I am a beginner to web services can any one with experience please help me with the following:
+
+I...</div>
+                                </li>
+                            
+                        
+                        
+                    
+                        
+                            
+                                <li>
+                                    <a href="https://www.biostars.org/p/231625/">Unranked nodes in NCBI's taxonomic tree </a>
+
+                                    <div class="peek">Hello to everyone!
+
+I am using NCBI's taxonomic information for the evaluation of metagenomics to...</div>
+                                </li>
+                            
+                        
+                        
+                    
+                        
+                            
+                                <li>
+                                    <a href="https://www.biostars.org/p/16797/">Are There Any Tools For Ontology Enrichment Analysis That Work With Any Ontology? (Not Just Gene Ontology) </a>
+
+                                    <div class="peek">Hi!
+
+I'm looking for tools that would allow me to do enrichment analysis not just over the Gene O...</div>
+                                </li>
+                            
+                        
+                        
+                    
+                        
+                            
+                        
+                        
+                    
+                        
+                            
+                                <li>
+                                    <a href="https://www.biostars.org/p/256523/">parse data in excel or using perl  </a>
+
+                                    <div class="peek">Hi 
+can anyone tell me how to parse a file which looks like this. 
+
+    file1-- 
+    1
+    2
+    ...</div>
+                                </li>
+                            
+                        
+                        
+                    
+                        
+                            
+                        
+                        
+                    
+                        
+                            
+                        
+                        
+                    
+                </ul>
+            
+        </div>
+    </div>
+    <script src="./Parsing Obo File_files/prism.js" type="text/javascript"></script>
+
+
+
+    
+    
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <hr>
+            </div>
+        </div>
+
+        <div class="row toc">
+
+            <div class="col-xs-3 col-xs-offset-1 col-md-2 col-md-offset-3">
+                <div class="title">Content</div>
+                <ul class="flat">
+                    <li><a href="https://www.biostars.org/local/search/page/">Search</a></li>
+                    <li><a href="https://www.biostars.org/user/list/">Users</a></li>
+                    <li><a href="https://www.biostars.org/t/">Tags</a></li>
+                    <li><a href="https://www.biostars.org/b/list/">Badges</a></li>
+                </ul>
+            </div>
+
+            <div class="col-xs-3 col-md-2">
+                <div class="title">Help</div>
+                <ul class="flat">
+                    <li><a href="https://www.biostars.org/info/about/">About</a></li>
+                    <li><a href="https://www.biostars.org/info/faq/">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="col-xs-3 col-md-2 ">
+                <div class="title">Access</div>
+                <ul class="flat">
+                    <li><a href="https://www.biostars.org/info/rss/">RSS</a></li>
+                    <li>Stats</li>
+                    <li><a href="https://www.biostars.org/info/api/">API</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                Use of this site constitutes acceptance of our <a href="https://www.biostars.org/info/policy/">User
+                Agreement
+                and Privacy
+                Policy</a>.
+            </div>
+            <div class="col-md-12 text-center">
+                Powered by <a href="https://github.com/ialbert/biostar-central">Biostar</a>
+                version 2.3.0
+            </div>
+        </div>
+    
+
+    
+    <div id="traffic">Traffic: 2341 users visited in the last hour</div>
+
+ 	<div align="center" style="margin-top:2em">
+    <iframe style="background:transparent !important" scrolling="no" frameborder="0" allowtransparency="true" width="300" height="300" src="./Parsing Obo File_files/c2.html"></iframe><script type="text/javascript" src="./Parsing Obo File_files/6.js" async="async"></script>
+</div>
+
+</div>
+
+
+
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-101522-12']);
+        _gaq.push(['_setDomainName', 'biostars.org']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+
+</body></html>

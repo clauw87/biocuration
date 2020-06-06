@@ -1,0 +1,191 @@
+
+[Term]
+id: UBERON:0000004
+name: nose
+def: "The olfactory organ of vertebrates, consisting of nares, olfactory epithelia and the structures and skeletal framework of the nasal cavity." [UBERON:cjm]
+subset: efo_slim
+subset: major_organ
+--
+
+[Term]
+id: UBERON:0000056
+name: ureter
+def: "Muscular duct that propels urine from the kidneys to the urinary bladder, or related organs." [GO:0090189, http://en.wikipedia.org/wiki/Ureter]
+subset: efo_slim
+subset: major_organ
+--
+
+[Term]
+id: UBERON:0000057
+name: urethra
+def: "the fibromuscular tubular canal through which urine is discharged from the bladder to the exterior via the external urinary meatus; in males, the urethra is joined by the ejaculatory ducts and serves as a passageway for semen during ejaculation, as well as a canal for urine during voiding; in females, the urethra is shorter and emerges above the vaginal opening" [MGI:anna, MP:0000537]
+subset: efo_slim
+subset: major_organ
+--
+
+[Term]
+id: UBERON:0000059
+name: large intestine
+def: "A subdivision of the digestive tract that connects the small intestine to the cloaca or anus. Lacks or has few villi[Kardong]." [http://en.wikipedia.org/wiki/Large_intestine_(anatomy), ISBN:0073040584]
+subset: efo_slim
+subset: major_organ
+--
+
+[Term]
+id: UBERON:0000165
+name: mouth
+def: "The proximal portion of the digestive tract, containing the oral cavity and bounded by the oral opening. In vertebrates, this extends to the pharynx and includes gums, lips, tongue and parts of the palate. Typically also includes the teeth, except where these occur elsewhere (e.g. pharyngeal jaws) or protrude from the mouth (tusks)." [http://en.wikipedia.org/wiki/Mouth, https://github.com/obophenotype/uberon/wiki/The-digestive-tract]
+subset: efo_slim
+subset: major_organ
+--
+
+[Term]
+id: UBERON:0000945
+name: stomach
+def: "An expanded region of the vertebrate alimentary tract that serves as a food storage compartment and digestive organ. A stomach is lined, in whole or in part by a glandular epithelium." [http://en.wikipedia.org/wiki/Stomach, https://orcid.org/0000-0002-6601-2165, ISBN:0073040584]
+subset: efo_slim
+subset: major_organ
+--
+[Term]
+id: UBERON:0000948
+name: heart
+def: "A myogenic muscular circulatory organ found in the vertebrate cardiovascular system composed of chambers of cardiac muscle. It is the primary circulatory organ." [http://en.wikipedia.org/wiki/Heart, http://orcid.org/0000-0002-6601-2165]
+comment: Taxon notes:" the ascidian tube-like heart lacks chambers....The ascidian heart is formed after metamorphosis as a simple tube-like structure with a single-layered myoepithelium that is continuous with a single-layered pericar- dial wall. It lacks chambers and endocardium.... The innovation of the chambered heart was a key event in vertebrate evolution, because the chambered heart generates one-way blood flow with high pressure, a critical requirement for the efficient blood supply of large-body vertebrates... all extant vertebrates have hearts with two or more chambers (Moorman and Christoffels 2003)" DOI:10.1101/gad.1485706
+subset: efo_slim
+subset: major_organ
+--
+[Term]
+id: UBERON:0000955
+name: brain
+def: "The brain is the center of the nervous system in all vertebrate, and most invertebrate, animals. Some primitive animals such as jellyfish and starfish have a decentralized nervous system without a brain, while sponges lack any nervous system at all. In vertebrates, the brain is located in the head, protected by the skull and close to the primary sensory apparatus of vision, hearing, balance, taste, and smell[WP]." [http://en.wikipedia.org/wiki/Brain, https://github.com/obophenotype/uberon/issues/300]
+subset: cumbo
+subset: efo_slim
+subset: major_organ
+--
+[Term]
+id: UBERON:0000970
+name: eye
+def: "An organ that detects light." [https://orcid.org/0000-0002-6601-2165]
+subset: efo_slim
+subset: functional_classification
+subset: major_organ
+--
+property_value: homology_notes "Arguably, one of the most important aspects of urbilaterian organogenesis would have been gonadogenesis, since Urbilateria must have successfully generated gametes and developed a strategy for extrusion and fertilization, in order to be the ancestor of all living Bilateria.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000182", ontology="VHOG", source="http://bgee.unil.ch/", source="PMID:21672850 Extavour CGM, Gray anatomy: phylogenetic patterns of somatic gonad structures and reproductive strategies across Bilateria. Integrative and Comparative Biology (2007)"}
+
+[Term]
+id: UBERON:0000991
+name: gonad
+def: "Reproductive organ that produces and releases eggs (ovary) or sperm (testis)." [http://en.wikipedia.org/wiki/Gonad, ISBN:0140512888, ZFA:0000413, ZFIN:curator]
+subset: major_organ
+--
+
+[Term]
+id: UBERON:0001043
+name: esophagus
+def: "Tube that connects the pharynx to the stomach. In mammals, the oesophagus connects the buccal cavity with the stomach. The stratified squamous non-keratinised epithelium lining the buccal cavity is continued through the pharynx down into the oesophagus. The lowest part of the oesophagus (ca. 2 cm) is lined with gastric mucosa and covered by peritoneum. The main body of the oesophagus is lined with small, simple mucous glands. Each gland opens into the lumen by a long duct which pierces the muscularis mucosae (Wilson and Washington, 1989). A sphincter is situated at the point where the oesophagus enters the stomach to prevent gastro-oesophageal reflux, i.e. to prevent acidic gastric contents from reaching stratified epithelia of the oesophagus, where they can cause inflammation and irritation (Wilson and Washington, 1989; Brown et al., 1993)." [http://en.wikipedia.org/wiki/Esophagus, http://www.rivm.nl/interspeciesinfo/inter/oesophagus/]
+subset: efo_slim
+subset: major_organ
+--
+
+[Term]
+id: UBERON:0001255
+name: urinary bladder
+def: "distensible musculomembranous organ situated in the anterior part of the pelvic cavity in which urine collects before excretion[MP]." [http://en.wikipedia.org/wiki/Urinary_bladder, MGI:anna]
+subset: efo_slim
+subset: major_organ
+--
+
+[Term]
+id: UBERON:0001264
+name: pancreas
+def: "An endoderm derived structure that produces precursors of digestive enzymes and blood glucose regulating enzymes[GO]." [GO:0031016]
+subset: efo_slim
+subset: major_organ
+--
+
+[Term]
+id: UBERON:0001474
+name: bone element
+def: "Skeletal element that is composed of bone tissue." [GO_REF:0000034, http://dx.plos.org/10.1371/journal.pone.0051070, https://github.com/obophenotype/uberon/issues/277, PSPUB:0000170, VSAO:0000057]
+subset: efo_slim
+subset: major_organ
+--
+[Term]
+id: UBERON:0002003
+name: obsolete peripheral nerve
+alt_id: UBERON:0003377
+def: "A cable-like bundle of peripheral axons (the long, slender projections of neurons). A nerve provides a common pathway for the electrochemical nerve impulses that are transmitted along each of the axons. Nerves are found only in the peripheral nervous system. In the central nervous system, the analogous structures are known as tracts[WP]." [http://en.wikipedia.org/wiki/Peripheral_nerve]
+comment: See https://github.com/obophenotype/mouse-anatomy-ontology/issues/6
+subset: major_organ
+--
+[Term]
+id: UBERON:0002048
+name: lung
+def: "Respiration organ that develops as an oupocketing of the esophagus." [http://orcid.org/0000-0002-6601-2165]
+comment: Snakes and limbless lizards typically possess only the right lung as a major respiratory organ; the left lung is greatly reduced, or even absent. Amphisbaenians, however, have the opposite arrangement, with a major left lung, and a reduced or absent right lung [WP]
+subset: efo_slim
+subset: major_organ
+--
+
+[Term]
+id: UBERON:0002097
+name: skin of body
+def: "The organ covering the body that consists of the dermis and epidermis." [UBERON:cjm]
+subset: efo_slim
+subset: major_organ
+--
+
+[Term]
+id: UBERON:0002107
+name: liver
+def: "An exocrine gland which secretes bile and functions in metabolism of protein and carbohydrate and fat, synthesizes substances involved in the clotting of the blood, synthesizes vitamin A, detoxifies poisonous substances, stores glycogen, and breaks down worn-out erythrocytes[GO]." [BTO:0000759, http://en.wikipedia.org/wiki/Liver]
+subset: efo_slim
+subset: major_organ
+--
+
+[Term]
+id: UBERON:0002108
+name: small intestine
+def: "Subdivision of digestive tract that connects the stomach to the large intestine and is where much of the digestion and absorption of food takes place (with the exception of ruminants). The mammalian small intestine is long and coiled and can be differentiated histologically into: duodenum, jejunem, ileum[WP,cjm,Kardong]." [http://en.wikipedia.org/wiki/Small_intestine, ISBN:0073040584]
+subset: efo_slim
+subset: major_organ
+--
+
+[Term]
+id: UBERON:0002113
+name: kidney
+def: "A paired organ of the urinary tract which has the production of urine as its primary function." [http://anatomy.uams.edu/anatomyhtml/kidney.html, http://en.wikipedia.org/wiki/Kidney]
+subset: efo_slim
+subset: major_organ
+--
+[Term]
+id: UBERON:0002240
+name: spinal cord
+def: "Part of the central nervous system located in the vertebral canal continuous with and caudal to the brain; demarcated from brain by plane of foramen magnum. It is composed of an inner core of gray matter in which nerve cells predominate, and an outer layer of white matter in which myelinated nerve fibers predominate, and surrounds the central canal. (CUMBO)" [BIRNLEX:1709]
+subset: cumbo
+subset: efo_slim
+subset: major_organ
+--
+
+[Term]
+id: UBERON:0002367
+name: prostate gland
+def: "The prostate gland is a partly muscular, partly glandular body that is situated near the base of the mammalian male urethra and secretes an alkaline viscid fluid which is a major constituent of the ejaculatory fluid." [GO:0030850, http://en.wikipedia.org/wiki/Prostate]
+subset: efo_slim
+subset: major_organ
+--
+
+[Term]
+id: UBERON:0002370
+name: thymus
+def: "Anatomical structure of largely lymphoid tissue that functions in cell-mediated immunity by being the site where T cells develop." [http://en.wikipedia.org/wiki/Thymus, NLM:thymus]
+subset: efo_slim
+subset: major_organ
+--
+
+[Term]
+id: UBERON:0003126
+name: trachea
+def: "The trachea is the portion of the airway that attaches to the bronchi as it branches [GO:dph]." [GO:0060438, http://en.wikipedia.org/wiki/Vertebrate_trachea]
+subset: efo_slim
+subset: major_organ

@@ -1,0 +1,158 @@
+# categories check
+bone
+skin
+lymphoid
+muscle
+subcutaneous tissue
+
+
+# too general no tissue
+thigh
+axila
+left axilla
+back-lower left
+
+
+# dubious, brain?
+"EGAD00001005776 "
+" Left caudate"
+
+
+# dubious, probably lymph nodes
+axillary
+laterocervical
+inguinal
+iliac
+non specified/maxillar
+supraclavicular
+laterocervical/supraclavicular/inguinal
+
+laterocervical/inguinal
+axillary/cervical
+cervical
+left hilar node
+
+
+
+
+# not found
+parotis
+sigma
+sigma lesion metastasis
+sarcomatiod
+masticator space
+
+
+# tumour types
+primary choroid tumor
+
+
+# brain
+medulla
+subcortex
+frontotemporal cortex
+ventral midbrain
+
+cortex middle
+cortical hem
+
+
+
+
+# dubious, probably epithelium,mouth
+mandibula
+palate
+parotid
+
+
+# dubious, artery or lymph node
+left external iliac
+iliac left
+iliac right
+left external iliac
+
+
+
+# dubious skin
+left flank
+subcutaneous tumor
+subcutaneous metastasis
+soft tissue-subcutaneous
+
+soft tissue-paraspinal
+soft tissue (thigh)
+
+
+# too broad
+below liver
+
+
+supraclavicular region
+soft tissue-supraclavicular
+
+
+
+right big toe
+right neck
+left submandibular
+left hand
+right post-auricular
+left lower neck
+left neck
+limbs-arm
+limbs
+
+
+
+
+normal from other tissue
+spinal
+infra and supratentorial
+right posterior frontal
+
+
+ears, nose and throat(ent)
+indonesian chinese
+transverse
+left caudate
+
+left hilar node
+soft tissue (thigh)
+
+# vein?
+suprarenal infrahepatic
+ligamentum triangulare left
+
+obturatorius loge right
+
+buttock-left
+buttock-right
+
+
+
+
+
+"left caudate"
+
+
+# cells
+"t cells"
+"b cells"  
+
+
+
+
+# normal vs abnorla
+"normal tissue" 
+"tumor" 
+"primary tumour - solid tissue" 
+"primary tumor/metastasis"
+
+# molecular
+"nuclear rna"
+"dna"
+
+
+
+
+

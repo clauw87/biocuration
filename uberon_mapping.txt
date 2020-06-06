@@ -1,0 +1,1 @@
+fgrep -A 5 '[Term]' --color=AUTO human-view.obo > uberon_terms.txt

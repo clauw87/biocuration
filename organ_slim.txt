@@ -1,0 +1,1351 @@
+
+[Term]
+id: UBERON:0000007
+name: pituitary gland
+def: "The pituitary gland is an endocrine gland that secretes hormones that regulate many other glands [GO]. An endocrine gland located ventral to the diencephalon and derived from mixed neuroectodermal and non neuroectodermal origin [ZFIN]." [http://en.wikipedia.org/wiki/Pituitary_gland, ZFIN:curator]
+subset: efo_slim
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0000016
+name: endocrine pancreas
+def: "The part of the pancreas that is part of the endocrine system and is made up of islet cells, which produce insulin, glucagon and somatostatin." [GO:GO, http://orcid.org/0000-0002-6601-2165]
+subset: efo_slim
+subset: organ_slim
+--
+property_value: taxon_notes "endocrine and exocrine pancreas are not co-associated in hagfishes or lampreys" xsd:string {source="http://www.ncbi.nlm.nih.gov/pubmed/20959416"}
+
+[Term]
+id: UBERON:0000017
+name: exocrine pancreas
+def: "The part of the pancreas that is part of the exocrine system and which produces and store zymogens of digestive enzymes, such as chymotrypsinogen and trypsinogen in the acinar cells [GO]." [GOC:GO, http://orcid.org/0000-0002-6601-2165]
+subset: organ_slim
+--
+[Term]
+id: UBERON:0000056
+name: ureter
+def: "Muscular duct that propels urine from the kidneys to the urinary bladder, or related organs." [GO:0090189, http://en.wikipedia.org/wiki/Ureter]
+subset: efo_slim
+subset: major_organ
+subset: organ_slim
+--
+[Term]
+id: UBERON:0000057
+name: urethra
+def: "the fibromuscular tubular canal through which urine is discharged from the bladder to the exterior via the external urinary meatus; in males, the urethra is joined by the ejaculatory ducts and serves as a passageway for semen during ejaculation, as well as a canal for urine during voiding; in females, the urethra is shorter and emerges above the vaginal opening" [MGI:anna, MP:0000537]
+subset: efo_slim
+subset: major_organ
+subset: organ_slim
+--
+[Term]
+id: UBERON:0000059
+name: large intestine
+def: "A subdivision of the digestive tract that connects the small intestine to the cloaca or anus. Lacks or has few villi[Kardong]." [http://en.wikipedia.org/wiki/Large_intestine_(anatomy), ISBN:0073040584]
+subset: efo_slim
+subset: major_organ
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0000080
+name: mesonephros
+def: "The second stage of the kidney. It serves as the main excretory organ of aquatic vertebrates and as a temporary embryonic kidney in higher vertebrates. It is composed of the mesonephric duct (also called the Wolffian duct), mesonephric tubules, and associated capillary tufts. A single tubule and its associated capillary tuft is called a mesonephric excretory unit; these units are similar in structure and function to nephrons of the adult kidney. The mesonephros is derived from intermediate mesoderm in the vertebrate embryo." [GO:0001823, http://en.wikipedia.org/wiki/Mesonephros]
+subset: efo_slim
+subset: organ_slim
+--
+property_value: taxon_notes "In mammals, the mesonephros is the second of the three embryonic kidneys to be established and exists only transiently. In fish and amphibians, the mesonephros will form the mature kidney" xsd:string
+
+[Term]
+id: UBERON:0000081
+name: metanephros
+def: "In mammals, the metanephros is the excretory organ of the fetus, which develops into the mature kidney and is formed from the rear portion of the nephrogenic cord. The metanephros is an endocrine and metabolic organ that filters the blood and excretes the end products of body metabolism in the form of urine[GO]" [GO:0001656, http://en.wikipedia.org/wiki/Metanephros#Metanephros]
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0000171
+name: respiration organ
+def: "Organ that functions in gaseous exchange between an organism and its environment. In plants, microorganisms, and many small animals, air or water makes direct contact with the organism's cells or tissue fluids, and the processes of diffusion supply the organism with dioxygen (O2) and remove carbon dioxide (CO2). In larger animals the efficiency of gaseous exchange is improved by specialized respiratory organs, such as lungs and gills, which are ventilated by breathing mechanisms." [GO:0007585]
+subset: functional_classification
+subset: organ_slim
+--
+property_value: external_definition "Fetal structure, which is a developmental form of a vertebrate animal at any given time point from 8 weeks of gestation to birth (or hatching). Examples: There is only one fetus[FMA:63919]." xsd:string {source="FMA:63919"}
+
+[Term]
+id: UBERON:0000325
+name: gastric gland
+def: "The branched tubular glands found in the mucosa of the fundus and body of the stomach which contain parietal cells that secrete hydrochloric acid and zymogenic cells that produce pepsin." [MGI:anna]
+subset: organ_slim
+--
+relationship: part_of UBERON:0007195 ! stroma of bone marrow
+
+[Term]
+id: UBERON:0000333
+name: intestinal gland
+def: "A gland that is part of the intestinal mucosa. Examples include the intestinal crypts, duodenal gland[cjm]." [https://orcid.org/0000-0002-6601-2165]
+subset: organ_slim
+--
+relationship: part_of UBERON:0012378 {source="FMA"} ! muscle layer of urinary bladder
+
+[Term]
+id: UBERON:0000382
+name: apocrine sweat gland
+def: "Apocrine sweat glands are sweat glands composed of a coiled secretory portion located at the junction of the dermis and subcutaneous fat, from which a straight portion inserts and secretes into the infundibular portion of the hair follicle. The ducts of apocrine glands open into the canals of hair follicles. The stimulus for the secretion of apocrine sweat glands is adrenaline, which is a hormone carried in the blood[WP]." [http://en.wikipedia.org/wiki/Apocrine_sweat_gland]
+subset: organ_slim
+--
+relationship: surrounded_by UBERON:0000389 ! lens cortex
+
+[Term]
+id: UBERON:0000391
+name: leptomeninx
+def: "pia mater or arachnoid mater." [http://en.wikipedia.org/wiki/Leptomeninges, https://github.com/obophenotype/uberon/issues/300]
+subset: organ_slim
+--
+relationship: part_of UBERON:0001991 ! cervical ganglion
+
+[Term]
+id: UBERON:0000409
+name: serous gland
+def: "A gland in which the principal secretory cells are serous secreting cells." [http://orcid.org/0000-0002-6601-2165, http://www.siumed.edu/~dking2/intro/glands.htm]
+subset: organ_slim
+--
+property_value: taxon_notes "In humans, at the surface of the skin in hands and feet, they appear as epidermal or papillary ridges (colloquially known as fingerprints)" xsd:string
+
+[Term]
+id: UBERON:0000414
+name: mucous gland
+def: "A gland in which the principal secretory cells are mucus secreting cells." [http://orcid.org/0000-0002-6601-2165, http://www.siumed.edu/~dking2/intro/glands.htm]
+subset: organ_slim
+--
+relationship: has_part GO:0036379 ! myofilament
+
+[Term]
+id: UBERON:0000423
+name: eccrine sweat gland
+def: "A merocrine, unbranched, unbranched, coiled, tubular gland sweat gland. In humans, distributed over almost all of the body surface, and promote cooling by evaporation of their secretion." [http://en.wikipedia.org/wiki/Eccrine_sweat_gland, http://orcid.org/0000-0002-6601-2165]
+subset: organ_slim
+--
+relationship: part_of UBERON:0000995 ! uterus
+
+[Term]
+id: UBERON:0000460
+name: major vestibular gland
+def: "the paired glands located slightly posterior and to the left and right of the opening of the vagina in the superficial perineal pouch in females; they secrete mucus to lubricate the vagina and are homologous to bulbourethral (Cowper's) glands in males" [MGI:anna, MP:0011787]
+subset: organ_slim
+--
+property_value: editor_note "resolve difference in WP vs MP, superficial vs deep perineal pouch" xsd:string
+
+[Term]
+id: UBERON:0000461
+name: minor vestibular gland
+def: "Small mucous glands opening upon the vestibular mucous membrane between the urethral and the vaginal orifice." [BTO:0003116]
+subset: organ_slim
+--
+[Term]
+id: UBERON:0000473
+name: testis
+alt_id: UBERON:0002117
+def: "A gonad of a male animal. A gonad produces and releases sperm." [http://orcid.org/0000-0002-6601-2165]
+subset: efo_slim
+subset: organ_slim
+--
+is_a: UBERON:0000483 ! epithelium
+
+[Term]
+id: UBERON:0000489
+name: cavitated compound organ
+def: "Compound organ that contains one or more macroscopic anatomical spaces." [http://orcid.org/0000-0001-9114-8737]
+subset: organ_slim
+--
+property_value: external_definition "Epithelium that consists of a single layer of epithelial cells.[CARO]" xsd:string {date_retrieved="2012-06-20", external_class="CARO:0000073", ontology="CARO", source="http://orcid.org/0000-0001-9114-8737", source="FMA:45561"}
+
+[Term]
+id: UBERON:0000491
+name: solid compound organ
+def: "Compound organ that does not contain macroscopic anatomical spaces." [http://orcid.org/0000-0001-9114-8737]
+subset: organ_slim
+--
+[Term]
+id: UBERON:0000945
+name: stomach
+def: "An expanded region of the vertebrate alimentary tract that serves as a food storage compartment and digestive organ. A stomach is lined, in whole or in part by a glandular epithelium." [http://en.wikipedia.org/wiki/Stomach, https://orcid.org/0000-0002-6601-2165, ISBN:0073040584]
+subset: efo_slim
+subset: major_organ
+subset: organ_slim
+--
+id: UBERON:0000948
+name: heart
+def: "A myogenic muscular circulatory organ found in the vertebrate cardiovascular system composed of chambers of cardiac muscle. It is the primary circulatory organ." [http://en.wikipedia.org/wiki/Heart, http://orcid.org/0000-0002-6601-2165]
+comment: Taxon notes:" the ascidian tube-like heart lacks chambers....The ascidian heart is formed after metamorphosis as a simple tube-like structure with a single-layered myoepithelium that is continuous with a single-layered pericar- dial wall. It lacks chambers and endocardium.... The innovation of the chambered heart was a key event in vertebrate evolution, because the chambered heart generates one-way blood flow with high pressure, a critical requirement for the efficient blood supply of large-body vertebrates... all extant vertebrates have hearts with two or more chambers (Moorman and Christoffels 2003)" DOI:10.1101/gad.1485706
+subset: efo_slim
+subset: major_organ
+subset: organ_slim
+--
+id: UBERON:0000970
+name: eye
+def: "An organ that detects light." [https://orcid.org/0000-0002-6601-2165]
+subset: efo_slim
+subset: functional_classification
+subset: major_organ
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0000982
+name: skeletal joint
+def: "Anatomical cluster that consists of two or more adjacent skeletal structures, which may be interconnected by various types of tissue[VSAO]." [GO_REF:0000034, http://dx.plos.org/10.1371/journal.pone.0051070, http://en.wikipedia.org/wiki/Joint, VSAO:0000101]
+subset: efo_slim
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0000989
+name: penis
+def: "A intromittent organ in certain biologically male organisms. In placental mammals, this also serves as the organ of urination" [http://en.wikipedia.org/wiki/Penis, http://orcid.org/0000-0002-6601-2165, ISBN:0-683-40008-8, MP:0005187]
+subset: efo_slim
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0000991
+name: gonad
+def: "Reproductive organ that produces and releases eggs (ovary) or sperm (testis)." [http://en.wikipedia.org/wiki/Gonad, ISBN:0140512888, ZFA:0000413, ZFIN:curator]
+subset: major_organ
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0000992
+name: ovary
+def: "the gonad of a female organism which contains germ cells" [http://en.wikipedia.org/wiki/Ovary, ISBN:0-683-40008-8, MP:0001126]
+subset: efo_slim
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0000995
+name: uterus
+def: "the female muscular organ of gestation in which the developing embryo or fetus is nourished until birth" [MGI:csmith, MP:0001120]
+subset: efo_slim
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0000998
+name: seminal vesicle
+def: "Either of a pair of glandular pouches that lie one on either side of the male reproductive tract posterolateral to the urinary bladder and in the human male secrete a sugar- and protein-containing fluid into the ejaculatory duct." [BTO:0001234, http://en.wikipedia.org/wiki/Seminal_vesicle]
+subset: efo_slim
+subset: organ_slim
+--
+[Term]
+id: UBERON:0001043
+name: esophagus
+def: "Tube that connects the pharynx to the stomach. In mammals, the oesophagus connects the buccal cavity with the stomach. The stratified squamous non-keratinised epithelium lining the buccal cavity is continued through the pharynx down into the oesophagus. The lowest part of the oesophagus (ca. 2 cm) is lined with gastric mucosa and covered by peritoneum. The main body of the oesophagus is lined with small, simple mucous glands. Each gland opens into the lumen by a long duct which pierces the muscularis mucosae (Wilson and Washington, 1989). A sphincter is situated at the point where the oesophagus enters the stomach to prevent gastro-oesophageal reflux, i.e. to prevent acidic gastric contents from reaching stratified epithelia of the oesophagus, where they can cause inflammation and irritation (Wilson and Washington, 1989; Brown et al., 1993)." [http://en.wikipedia.org/wiki/Esophagus, http://www.rivm.nl/interspeciesinfo/inter/oesophagus/]
+subset: efo_slim
+subset: major_organ
+subset: organ_slim
+--
+[Term]
+id: UBERON:0001044
+name: saliva-secreting gland
+def: "saliva-secreting exocrine glands of the oral cavity[GO]" [GO:0007431, http://en.wikipedia.org/wiki/Salivary_gland]
+subset: efo_slim
+subset: functional_classification
+subset: organ_slim
+--
+[Term]
+id: UBERON:0001053
+name: arthropod neurohemal organ
+def: "A system of neurons that has the specialized function to produce and secrete hormones, and that constitutes, in whole or in part, an endocrine organ or system." [BTO:0002106]
+comment: brain areas from which substances enter blood for example, the neurohypophysis from which oxytocin and vasopressin enter blood.
+subset: efo_slim
+subset: organ_slim
+--
+relationship: posterior_to UBERON:0014478 ! rib skeletal system
+
+[Term]
+id: UBERON:0001100
+name: pectoralis minor
+def: "The Pectoralis minor is a thin, triangular muscle, situated at the upper part of the chest, beneath the Pectoralis major. [WP,unvetted]." [http://en.wikipedia.org/wiki/Pectoralis_minor_muscle]
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0001103
+name: diaphragm
+def: "A thin musculomebranous barrier that separates the abdominal and thoracic cavities. Often used for breathing control" [MP:0002279]
+subset: efo_slim
+subset: organ_slim
+--
+property_value: implements_design_pattern https://github.com/obophenotype/uberon/wiki/Modeling-paired-structures-Design-Pattern xsd:anyURI
+
+[Term]
+id: UBERON:0001121
+name: longus colli muscle
+def: "The Longus colli muscle is a muscle of the human body. The Longus colli is situated on the anterior surface of the vertebral column, between the atlas and the third thoracic vertebra. It is broad in the middle, narrow and pointed at either end, and consists of three portions, a superior oblique, an inferior oblique, and a vertical. The superior oblique portion arises from the anterior tubercles of the transverse processes of the third, fourth, and fifth cervical vertebræ and, ascending obliquely with a medial inclination, is inserted by a narrow tendon into the tubercle on the anterior arch of the atlas. The inferior oblique portion, the smallest part of the muscle, arises from the front of the bodies of the first two or three thoracic vertebræ; and, ascending obliquely in a lateral direction, is inserted into the anterior tubercles of the transverse processes of the fifth and sixth cervical vertebræ. The vertical portion arises, below, from the front of the bodies of the upper three thoracic and lower three cervical vertebræ, and is inserted into the front of the bodies of the second, third, and fourth cervical vertebræ. [WP,unvetted]." [http://en.wikipedia.org/wiki/Longus_colli_muscle]
+subset: organ_slim
+--
+property_value: external_definition "Opening on the vertebra for a spinal nerve as it emerges from the spinal canal.[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000729", ontology="AAO", source="AAO:LAP"}
+
+[Term]
+id: UBERON:0001132
+name: parathyroid gland
+def: "The parathyroid gland is an endocrine gland for secretion of parathyroid hormone, usually found as a pair, embedded in the connective tissue capsule on the posterior surface of the thyroid gland. Parathyroid regulates calcium and phosphorous metabolism." [http://en.wikipedia.org/wiki/Parathyroid_gland, ISBN:0-683-40008-8, MP:0000678]
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0001154
+name: vermiform appendix
+def: "A blind-ended tube connected to the cecum, from which it develops embryologically[WP]." [http://en.wikipedia.org/wiki/Vermiform_appendix]
+subset: efo_slim
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0001173
+name: biliary tree
+def: "A complex network of conduits that begins with the canals of Hering (intralobar bile duct) and progressively merges into a system of interlobular, septal, and major ducts which then coalesce to form the extrahepatic bile ducts, which finally deliver bile to the intestine, and in some species to the gallbladder." [https://doi.org/10.1002/ar.20664]
+comment: The path in many species is as follows: Bile canaliculi -> Canals of Hering (intralobar bile duct) -> interlobular bile ducts -> intrahepatic bile ducts -> left and right hepatic ducts merge to form -> common hepatic duct *exits liver* and joins -> cystic duct (from gall bladder) forming -> common bile duct -> joins with pancreatic duct -> forming ampulla of Vater -> enters duodenum [WP]
+subset: organ_slim
+--
+property_value: taxon_notes "Reptiles have accumulations of lymphocytes in their guts that may be primitive Peyer's patches (Zapata and Solas)." xsd:string
+
+[Term]
+id: UBERON:0001212
+name: duodenal gland
+def: "A compound tubular submucosal gland found in that portion of the duodenum which is above the hepatopancreatic sphincter (Sphincter of Oddi). The main function of these glands is to produce a mucus-rich alkaline secretion (containing bicarbonate)[WP]." [http://en.wikipedia.org/wiki/Brunner's_glands]
+subset: organ_slim
+--
+relationship: drains UBERON:0001155 ! colon
+
+[Term]
+id: UBERON:0001220
+name: quadratus lumborum
+def: "An abdominal muscle that inserts on the last rib and transverse processes of lumbar vertebrae. It is irregular and quadrilateral in shape, and broader below than above." [http://en.wikipedia.org/wiki/Quadratus_lumborum_muscle]
+subset: organ_slim
+--
+relationship: has_muscle_insertion UBERON:0002414 {notes="Last rib and transverse processes of lumbar vertebrae", source="dbpedia"} ! lumbar vertebra
+
+[Term]
+id: UBERON:0001221
+name: transversus abdominis muscle
+def: "The lateral abdominal wall muscle that is deep to the internal oblique." [ISBN:9781435464339, UBERON:cjm]
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0001237
+name: paraaortic body
+def: "A chromaffin paraganglion located at the bifurcation of the aorta or at the origin of the inferior mesenteric artery." [http://en.wikipedia.org/wiki/Organ_of_Zuckerkandl]
+comment: The largest chromaffin paraganglia, and the largest source of circulating catecholamines in the fetus and young infants, and gradually atrophies to microscopic loci[WP]
+subset: organ_slim
+--
+[Term]
+id: UBERON:0001255
+name: urinary bladder
+def: "distensible musculomembranous organ situated in the anterior part of the pelvic cavity in which urine collects before excretion[MP]." [http://en.wikipedia.org/wiki/Urinary_bladder, MGI:anna]
+subset: efo_slim
+subset: major_organ
+subset: organ_slim
+--
+[Term]
+id: UBERON:0001264
+name: pancreas
+def: "An endoderm derived structure that produces precursors of digestive enzymes and blood glucose regulating enzymes[GO]." [GO:0031016]
+subset: efo_slim
+subset: major_organ
+subset: organ_slim
+--
+relationship: part_of UBERON:0001333 {source="FMA"} ! male urethra
+
+[Term]
+id: UBERON:0001338
+name: urethral gland
+def: "Any of the numerous small mucous-secreting glands located in the wall of the male or female urethra that help protect the epithelium from the corrosive urine" [MP:anna]
+subset: organ_slim
+--
+property_value: external_ontology_notes "NCIT:C12339 paraurethral gland belongs here" xsd:string {external_ontology="NCIT"}
+
+[Term]
+id: UBERON:0001339
+name: ischiocavernosus muscle
+def: "The ischiocavernosus muscle is a muscle just below the surface of the perineum, present in both men and women. [WP,unvetted]." [http://en.wikipedia.org/wiki/Ischiocavernosus_muscle]
+subset: organ_slim
+--
+[Term]
+id: UBERON:0001474
+name: bone element
+def: "Skeletal element that is composed of bone tissue." [GO_REF:0000034, http://dx.plos.org/10.1371/journal.pone.0051070, https://github.com/obophenotype/uberon/issues/277, PSPUB:0000170, VSAO:0000057]
+subset: efo_slim
+subset: major_organ
+subset: organ_slim
+--
+property_value: external_ontology_notes "in MA this is a subclass of forelimb skin, but this violates part-disjointness in Uberon" xsd:string {external_ontology="MA"}
+
+[Term]
+id: UBERON:0001484
+name: articular capsule
+def: "An articular capsule (or joint capsule) is an envelope surrounding a synovial joint. [WP,unvetted]." [http://en.wikipedia.org/wiki/Articular_capsule]
+subset: organ_slim
+--
+property_value: taxon_notes "todo - verify ZFA link: An artery that connects caudal division of the internal carotid artery and the basal communicating artery to the basilar artery" xsd:string
+
+[Term]
+id: UBERON:0001629
+name: carotid body
+def: "A small epithelioid structure consisting of a small cluster of chemoreceptive and supporting cells located near the bifurcation of the common carotid artery that serves as a chemoreceptive organ that senses the pH, carbon dioxide, and oxygen concentrations in the blood and plays a crucial role in their homeostatic control." [MP:0003438]
+subset: organ_slim
+--
+relationship: part_of UBERON:0001530 ! common carotid artery plus branches
+
+[Term]
+id: UBERON:0001630
+name: muscle organ
+def: "Organ consisting of a tissue made up of various elongated cells that are specialized to contract and thus to produce movement and mechanical work[GO]." [GO:0007517]
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0001690
+name: ear
+def: "Sense organ in vertebrates that is specialized for the detection of sound, and the maintenance of balance. Includes the outer ear and middle ear, which collect and transmit sound waves; and the inner ear, which contains the organs of balance and (except in fish) hearing. Also includes the pinna, the visible part of the outer ear, present in some mammals." [GO:0042471, http://en.wikipedia.org/wiki/Ear]
+subset: efo_slim
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0001723
+name: tongue
+def: "A muscular organ in the floor of the mouth." [FEED:rd, https://github.com/obophenotype/uberon/issues/256]
+subset: efo_slim
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0001817
+name: lacrimal gland
+def: "The lacrimal glands are paired almond-shaped glands, located in or near the orbital region, that secrete the aqueous layer of the tear film.[WP]." [http://en.wikipedia.org/wiki/Lacrimal_gland, http://orcid.org/0000-0002-6601-2165]
+subset: efo_slim
+subset: organ_slim
+--
+property_value: taxon_notes "Innervation is highly complex and species-specific" xsd:string
+
+[Term]
+id: UBERON:0001818
+name: tarsal gland
+def: "A modified lobulated sebaceous gland at the rim of an eyelid, responsible for the supply of meibum." [http://en.wikipedia.org/wiki/Meibomian_gland, http://www.ncbi.nlm.nih.gov/pubmed/20664693, ISBN:0123813611]
+subset: organ_slim
+--
+relationship: part_of UBERON:0000019 ! camera-type eye
+
+[Term]
+id: UBERON:0001820
+name: sweat gland
+def: "any of the coil glands of the skin that secrete sweat" [ISBN:0-683-40008-8, MP:0000674]
+subset: organ_slim
+--
+property_value: taxon_notes "In humans a system of apocrine - and merocrine sweat glands is the main method of cooling. Many other mammals rely on panting or other means as a primary source of cooling, but still use sweat glands to aid in body temperature regulation" xsd:string
+
+[Term]
+id: UBERON:0001821
+name: sebaceous gland
+def: "A holocrine gland that secretes sebum into the hair follicles, or in hairless areas into ducts.[MP]." [http://en.wikipedia.org/wiki/Sebaceous_gland, MP:0000647]
+subset: organ_slim
+--
+property_value: homology_notes "Sebaceous glands are also limited to mammals.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0001468", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0471090588 Hildebrand M, Analysis of vertebrate structure (1983) p.102"}
+
+[Term]
+id: UBERON:0001822
+name: orbital septum
+def: "A membranous sheet that acts as the anterior boundary of the orbit. It extends from the orbital rims to the eyelids[WP]." [http://en.wikipedia.org/wiki/Orbital_septum]
+subset: organ_slim
+--
+property_value: has_relational_adjective "gingival" xsd:string
+
+[Term]
+id: UBERON:0001829
+name: major salivary gland
+def: "One of the three largest glands of the oral cavity that secrete most of the saliva, including the parotid, submandibular, and sublingual glands." [MP:0003792]
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0001830
+name: minor salivary gland
+def: "One of the smaller, largely mucus-secreting, exocrine glands of the oral cavity, consisting of the labial, buccal, molar, lingual, and palatine glands[MP]." [http://en.wikipedia.org/wiki/Salivary_gland#Minor_Salivary_Glands, MP:0003791]
+comment: There are over 600 minor salivary glands located throughout the oral cavity within the lamina propria of the oral mucosa. They are 1-2mm in diameter and unlike the other glands, they are not encapsulated by connective tissue only surrounded by it. The gland is usually a number of acini connected in a tiny lobule. A minor salivary gland may have a common excretory duct with another gland, or may have its own excretory duct. Their secretion is mainly mucous in nature (except for von Ebner's glands) and have many functions such as coating the oral cavity with saliva[WP].
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0001849
+name: membranous labyrinth
+alt_id: UBERON:0010113
+def: "Organ with organ cavity which consists of the vestibular labyrinth and the cochlear labyrinth. The membranous labyrinth is lodged within the bony labyrinth and has the same general form; it is, however, considerably smaller and is partly separated from the bony walls by a quantity of fluid, the perilymph.[FMA, WP]" [FMA:61022, http://en.wikipedia.org/wiki/Membranous_labyrinth]
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0001853
+name: utricle of membranous labyrinth
+def: "the larger of the two otolith organs in the vestibule" [http://en.wikipedia.org/wiki/Utricle_(ear), http://www.ncbi.nlm.nih.gov/pubmed/15363417, ISBN:0-8036-0655-9, MGI:smb, MP:0006090]
+comment: XAO/AAO to be checked - see https://github.com/seger/aao/issues/5; AAO has both utricle and utriculus; these are generally considered synonyms - e.g. http://www.fishbase.org/glossary/Glossary.php?q=utriculus
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0001854
+name: saccule of membranous labyrinth
+def: "the smaller of the two otolith organs in the vestibule" [http://en.wikipedia.org/wiki/Saccule, http://www.ncbi.nlm.nih.gov/pubmed/15363417, ISBN:0-8036-0655-9, MGI:smb, MP:0006089]
+comment: XAO/AAO to be checked - see https://github.com/seger/aao/issues/5
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0001905
+name: pineal body
+def: "A midline, cone like structure located in the dorso-caudal roof of the 3rd ventricle, attached by peduncles to the habenular and posterior commissures. The stalk contains nerve fibers, blood vessels, connective tissue and parenchymal cells (Paxinos, The Rat Central Nervous System, 2nd ed, pg 399)." [BIRNLEX:1184]
+subset: efo_slim
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0001911
+name: mammary gland
+def: "A specialized accessory gland of the skin of mammals that secretes milk. The gland is typically only developed in females, and regresses in males." [BTO:0000817, http://en.wikipedia.org/wiki/Mammary_gland, http://orcid.org/0000-0002-6601-2165]
+subset: efo_slim
+subset: organ_slim
+--
+relationship: part_of UBERON:0002185 ! bronchus
+
+[Term]
+id: UBERON:0001964
+name: least splanchnic nerve
+def: "A thoracic nerve that nerve travels into the abdomen, where its fibers synapse in the renal ganglia." [http://en.wikipedia.org/wiki/Thoracic_splanchnic_nerves#cite_note-4]
+subset: organ_slim
+--
+property_value: structure_notes "capillaries lack tunica media and tunica adventitia; only the endothelial wall of the tunica intima belongs" xsd:string
+
+[Term]
+id: UBERON:0001983
+name: crypt of Lieberkuhn
+def: "the tubular intestinal glands found in the mucosal membranes" [https://github.com/obophenotype/uberon/issues/213, ISBN:0-683-40008-8, MP:0000490]
+subset: organ_slim
+--
+[Term]
+id: UBERON:0001987
+name: placenta
+def: "organ of metabolic interchange between fetus and mother, partly of embryonic origin and partly of maternal origin[GO]. The fetal portion of the placenta is known as the villous chorion. The maternal portion is known as the decidua basalis. The two portions are held together by anchoring villi that are anchored to the decidua basalis by the cytotrophoblastic shell." [http://en.wikipedia.org/wiki/Placenta, http://www.med.umich.edu/lrc/coursepages/m1/embryology/embryo/06placenta.htm]
+comment: Marsupials possess only a rudimentary yolk-type placenta, with reduced nutrient and oxygen exchanging capabilities.
+subset: efo_slim
+subset: organ_slim
+--
+relationship: depicted_by http://upload.wikimedia.org/wikipedia/commons/a/a7/Gray1032.png
+relationship: supplies UBERON:0002048 ! lung
+
+[Term]
+id: UBERON:0002041
+name: terminal bronchus
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0002046
+name: thyroid gland
+def: "A two-lobed endocrine gland found in all vertebrates, located in front of and on either side of the trachea in humans, and producing various hormones, such as triiodothyronine and calcitonin[BTO]." [BTO:0001379, http://en.wikipedia.org/wiki/Thyroid]
+subset: efo_slim
+subset: organ_slim
+--
+id: UBERON:0002048
+name: lung
+def: "Respiration organ that develops as an oupocketing of the esophagus." [http://orcid.org/0000-0002-6601-2165]
+comment: Snakes and limbless lizards typically possess only the right lung as a major respiratory organ; the left lung is greatly reduced, or even absent. Amphisbaenians, however, have the opposite arrangement, with a major left lung, and a reduced or absent right lung [WP]
+subset: efo_slim
+subset: major_organ
+subset: organ_slim
+--
+[Term]
+id: UBERON:0002073
+name: hair follicle
+def: "A tube-like opening in the epidermis where the hair shaft develops and into which the sebaceous glands open[GO]." [http://en.wikipedia.org/wiki/Hair_follicle]
+comment: Development notes:Formation largely takes place during fetal and perinatal skin development. However, after skin wounding de novo hair follicle formation may also occur in adult mouse and rabbit skin[DOI:10.1016/j.cub.2008.12.005].
+subset: efo_slim
+subset: organ_slim
+--
+property_value: editor_note "TODO - check definition of trichocyte in CL" xsd:string
+
+[Term]
+id: UBERON:0002075
+name: viscus
+def: "An organ that is located within the body cavity (or in its extension, in the scrotum); it consists of organ parts that are embryologically derived from endoderm, splanchnic mesoderm or intermediate mesoderm; together with other organs, the viscus constitutes the respiratory, gastrointestinal, urinary, reproductive and immune systems, or is the central organ of the cardiovascular system. Examples: heart, lung, esophagus, kidney, ovary, spleen." [BTO:0001491, http://en.wikipedia.org/wiki/Viscus, https://github.com/obophenotype/mouse-anatomy-ontology/issues/14]
+subset: organ_slim
+--
+property_value: homology_notes "In fishes, the meninges consist of a single membrane, the primitive meninx, wrapped around the brain and spinal cord. With the adoption of terrestrial life, the meninges doubled. In amphibians, reptiles, and birds, the meninges include a thick outer dura mater derived from mesoderm and a thin inner secondary meninx. (...) In mammals, the dura mater persists, but division of the secondary meninx yields both the arachnoid and the pia mater from ectomesoderm.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000270", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0072528305 Kardong KV, Vertebrates: Comparative Anatomy, Function, Evolution (2006) p.639"}
+
+[Term]
+id: UBERON:0002093
+name: spinal dura mater
+def: "A dura mater that is part of a spinal cord [Automatically generated definition]." [OBOL:automatic]
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0002106
+name: spleen
+def: "the organ that functions to filter blood and to store red corpuscles and platelets" [ISBN:0-683-40008-8, MP:0000689]
+subset: efo_slim
+subset: organ_slim
+--
+[Term]
+id: UBERON:0002107
+name: liver
+def: "An exocrine gland which secretes bile and functions in metabolism of protein and carbohydrate and fat, synthesizes substances involved in the clotting of the blood, synthesizes vitamin A, detoxifies poisonous substances, stores glycogen, and breaks down worn-out erythrocytes[GO]." [BTO:0000759, http://en.wikipedia.org/wiki/Liver]
+subset: efo_slim
+subset: major_organ
+subset: organ_slim
+--
+[Term]
+id: UBERON:0002108
+name: small intestine
+def: "Subdivision of digestive tract that connects the stomach to the large intestine and is where much of the digestion and absorption of food takes place (with the exception of ruminants). The mammalian small intestine is long and coiled and can be differentiated histologically into: duodenum, jejunem, ileum[WP,cjm,Kardong]." [http://en.wikipedia.org/wiki/Small_intestine, ISBN:0073040584]
+subset: efo_slim
+subset: major_organ
+subset: organ_slim
+--
+[Term]
+id: UBERON:0002110
+name: gall bladder
+def: "An organ that aids digestion and stores bile produced by the liver[WP]." [http://en.wikipedia.org/wiki/Gallbladder]
+comment: Rats do not have a gallbladder, but produce bile. The bile flows directly from the liver through the (hepatic) bile duct into the small intestine (Hebel and Stromberg, 1988)
+subset: efo_slim
+subset: organ_slim
+--
+[Term]
+id: UBERON:0002113
+name: kidney
+def: "A paired organ of the urinary tract which has the production of urine as its primary function." [http://anatomy.uams.edu/anatomyhtml/kidney.html, http://en.wikipedia.org/wiki/Kidney]
+subset: efo_slim
+subset: major_organ
+subset: organ_slim
+--
+id: UBERON:0002120
+name: pronephros
+alt_id: UBERON:0005794
+def: "In mammals, the pronephros is the first of the three embryonic kidneys to be established and exists only transiently. In lower vertebrates such as fish and amphibia, the pronephros is the fully functional embryonic kidney and is indispensible for larval life[GO]." [GO:0048793, http://en.wikipedia.org/wiki/Pronephros]
+comment: Once the more complex mesonephros forms the pronephros undergoes apoptosis in amphibians. In fishes the nephron degenerates but the organ remains and becomes a component of the immune system[Wikipedia:Pronephros]. // TODO - check developmental relationships. Note that we previously include the ZFA/XAO terms under the more specific 'pronephric kidney', but these are now merged. TODO GCI: relationship: capable_of GO:0030104
+subset: efo_slim
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0002182
+name: main bronchus
+def: "One of two branches of the trachea." [http://en.wikipedia.org/wiki/Main_bronchus]
+subset: efo_slim
+subset: organ_slim
+--
+property_value: taxon_notes "In humans, histologically identical to trachea." xsd:string
+
+[Term]
+id: UBERON:0002183
+name: lobar bronchus
+def: "The lobar bronchus is the major airway within the respiratory tree that starts by division of the principal bronchi on both sides and ends at the point of its own subdivision into tertiary or segmental bronchi[GO]." [GO:0060482, http://en.wikipedia.org/wiki/Secondary_bronchus]
+subset: organ_slim
+--
+property_value: structure_notes "They have relatively large lumens that are lined by respiratory epithelium. There is a smooth muscle layer below the epithelium arranged as two ribbons of muscle that spiral in opposite directions. This smooth muscle layer contains seromucous glands. Irregularly arranged plates of hyaline cartilage surround the smooth muscle. These plates give structural support to the bronchus and maintain the patency of the lumen." xsd:string
+
+[Term]
+id: UBERON:0002184
+name: segmental bronchus
+def: "The tertiary bronchi (also known as the segmental bronchi) arise from the secondary bronchi. The respiratory epithelium lining their lumen is surrounded by a layer of smooth muscle. This layer is composed of two ribbons of smooth muscle that spiral in opposite directions. The smooth muscle layer is surrounded by irregular plates of hyaline cartilage which help maintain the patency of the airway. Each of the tertiary bronchi serves a specific bronchopulmonary segment. There are 10 tertiary bronchi in the right lung, and eight in the left. The tertiary bronchi get smaller and divide into primary bronchioles. [WP,unvetted]." [http://en.wikipedia.org/wiki/Segmental_bronchus]
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0002185
+name: bronchus
+def: "the upper conducting airways of the lung; these airways arise from the terminus of the trachea" [ISBN:0-397-51047-0, MESH:A04.411.125, MGI:cwg, MP:0002264]
+subset: efo_slim
+subset: organ_slim
+--
+relationship: part_of UBERON:0010388 {source="http://www.ncbi.nlm.nih.gov/pubmed/15906248"} ! proximal segment of rib
+
+[Term]
+id: UBERON:0002232
+name: olfactory gland
+def: "Bowman's glands (aka olfactory glands, glands of Bowman) are situated in the olfactory mucosa, beneath the olfactory epithelium, in the lamina propria, a connective tissue also containing fibroblasts, blood vessels, and bundles of fine axons from the olfactory neurons. The structure of the Bowman's glands consists of an acinus in the lamina propria and a secretory duct going out through the olfactory epithelium. Electron microscopy studies show that Bowman's glands contain cells with large secretory vesicles. Bowman's glands might secrete proteins such as Lysozyme, amylase and IgA similarly to serous glands. The exact composition of the secretions from Bowman's glands is unclear, but there is evidence that Bowman's glands do not produce odorant binding protein[WP]." [http://en.wikipedia.org/wiki/Olfactory_glands]
+subset: organ_slim
+--
+id: UBERON:0002240
+name: spinal cord
+def: "Part of the central nervous system located in the vertebral canal continuous with and caudal to the brain; demarcated from brain by plane of foramen magnum. It is composed of an inner core of gray matter in which nerve cells predominate, and an outer layer of white matter in which myelinated nerve fibers predominate, and surrounds the central canal. (CUMBO)" [BIRNLEX:1709]
+subset: cumbo
+subset: efo_slim
+subset: major_organ
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0002255
+name: vomeronasal organ
+def: "An organ thought to supplement the olfactory system in receiving pheromonic communication. The sensory part of the organ is in two long, thin sacs, situated on either side of the nasal septum at its base." [VHOG:0000665]
+subset: efo_slim
+subset: organ_slim
+--
+property_value: has_relational_adjective "peritoneal" xsd:string
+
+[Term]
+id: UBERON:0002359
+name: fibrous pericardium
+def: "Membrane organ which is attached to the pericardial sac proper and the central tendon of diaphragm and is continuous with the pretracheal fascia.[FMA]" [FMA:9586]
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0002360
+name: meninx
+def: "Membrane organ that surrounds the brain and the spinal cord." [FMA:9589, http://en.wikipedia.org/wiki/Meninx, http://www.shsu.edu/~bio_mlt/Chap15.html]
+subset: efo_slim
+subset: organ_slim
+--
+relationship: only_in_taxon NCBITaxon:40674 {source="ISBN:0073040584"} ! Mammalia
+
+[Term]
+id: UBERON:0002363
+name: dura mater
+def: "Thick, fibrous meningeal covering surrounding the brain and spinal cord. It is the outermost of the three meningeal coverings. It consists of two layers: the periosteal dura linking the inner surface of the skull and the meningeal dura that lies above the arachnoid dural membrane. The meningeal layer draws away from the periosteal layer and certain locations to form the dural reflections." [NLXANAT:090206]
+subset: organ_slim
+--
+property_value: function_notes "capable of inducing chondrogenesis - requires contact with an epithelium - http://www.ncbi.nlm.nih.gov/pubmed/16496288" xsd:string
+
+[Term]
+id: UBERON:0002364
+name: tympanic membrane
+def: "A thin membrane that separates the external ear from the middle ear, consisting of two epithelia (one part of the the external accoustic meatus epithelium, the other part of the tympanic cavity epithelium) with a fibrous layer between them. Its function is to transmit sound from the air to the ossicles inside the middle ear. The malleus bone bridges the gap between the eardrum and the other ossicles. Rupture or perforation of the eardrum can lead to conductive hearing loss. [WP,unvetted]." [http://en.wikipedia.org/wiki/Tympanic_membrane, http://www.ncbi.nlm.nih.gov/pubmed/11237469]
+subset: organ_slim
+--
+property_value: homology_notes "In particular, a tympanic membrane was not present in the earliest tetrapods (...). An ear utilizing a tympanic membrane evolved independently at least three times in tetrapods: (1) in the lineage that leads to anurans (frogs), (2) in the line of evolution to turtles and diapsids, and (3) in the late synapsid lineage that gave rise to mammals.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0001146", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.418"}
+
+[Term]
+id: UBERON:0002365
+name: exocrine gland
+def: "A gland that secretes products (excluding hormones and other chemical messengers) into ducts (duct glands) which lead directly into the external environment[WP]. Typical exocrine glands include sweat glands, salivary glands, mammary glands, stomach, liver, pancreas" [http://en.wikipedia.org/wiki/Exocrine_gland]
+subset: organ_slim
+--
+property_value: editor_note "Currently this is logically defined by the system it belongs to, but a better system may be base this on presence/absence of ducts. However, the dual nature of the liver should be taken into consideration here. Consider adding subclasses" xsd:string
+
+[Term]
+id: UBERON:0002366
+name: bulbo-urethral gland
+def: "Any of the small paired racemose glands below the apex of the prostate in males, located posterolateral to the membranous portion of the urethra at the base of the penis, between the two layers of the fascia of the urogenital diaphragm, in the deep perineal pouch, and enclosed by transverse fibers of the sphincter urethrae membranaceae muscle; homologous to the greater vestibular (Bartholin's) glands in the female[MP]" [http://en.wikipedia.org/wiki/Bulbourethral_gland, MP:anna]
+subset: organ_slim
+--
+[Term]
+id: UBERON:0002367
+name: prostate gland
+def: "The prostate gland is a partly muscular, partly glandular body that is situated near the base of the mammalian male urethra and secretes an alkaline viscid fluid which is a major constituent of the ejaculatory fluid." [GO:0030850, http://en.wikipedia.org/wiki/Prostate]
+subset: efo_slim
+subset: major_organ
+subset: organ_slim
+--
+property_value: has_relational_adjective "prostatic" xsd:string
+
+[Term]
+id: UBERON:0002368
+name: endocrine gland
+def: "Endocrine glands are glands of the endocrine system that secrete their products directly into the circulatory system rather than through a duct.[WP, modified]." [http://en.wikipedia.org/wiki/Endocrine_gland]
+subset: organ_slim
+--
+relationship: part_of UBERON:0000949 ! endocrine system
+
+[Term]
+id: UBERON:0002369
+name: adrenal gland
+def: "Either of a pair of complex endocrine organs near the anterior medial border of the kidney consisting of a mesodermal cortex that produces glucocorticoid, mineralocorticoid, and androgenic hormones and an ectodermal medulla that produces epinephrine and norepinephrine[BTO]." [BTO:0000047, http://en.wikipedia.org/wiki/Adrenal_gland]
+subset: organ_slim
+--
+[Term]
+id: UBERON:0002370
+name: thymus
+def: "Anatomical structure of largely lymphoid tissue that functions in cell-mediated immunity by being the site where T cells develop." [http://en.wikipedia.org/wiki/Thymus, NLM:thymus]
+subset: efo_slim
+subset: major_organ
+subset: organ_slim
+--
+property_value: homology_notes "The sternomastoid and the three parts of the trapezius are branchiomeric muscles that have secondarily acquired an attachment to the pectoral girdle. They evolved from the fish cucullaris.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000834", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.345"}
+
+[Term]
+id: UBERON:0002381
+name: pectoralis major
+def: "The pectoralis major is a thick, fan-shaped muscle, situated at the upper front of the chest wall. It makes up the bulk of the chest muscles in the male and lies under the breast in the female. Underneath the pectoralis major is the pectoralis minor, a thin, triangular muscle. [WP,unvetted]." [http://en.wikipedia.org/wiki/Pectoralis_major_muscle]
+subset: organ_slim
+--
+relationship: superficial_to UBERON:0001100 ! pectoralis minor
+
+[Term]
+id: UBERON:0002382
+name: rectus abdominis muscle
+def: "The rectus abdominis muscle is a paired muscle running vertically on each side of the anterior wall of the abdomen. There are two parallel sets of muscles, separated by a midline band of connective tissue called the linea alba (white line). It extends from the pubic symphysis/pubic crest inferiorly to the xiphisternum/xiphoid process and lower costal cartilages (5-7) superiorly. It is contained in the Rectus sheath. The rectus is usually crossed by three fibrous bands licked by the tendinous inscriptions. [WP,modified]." [http://en.wikipedia.org/wiki/Rectus_abdominis_muscle]
+subset: organ_slim
+--
+property_value: structure_notes "the nasolacrimal duct, the sac is lined by stratified columnar epithelium with mucus-secreting goblet cells, and is surrounded by connective tissue" xsd:string
+
+[Term]
+id: UBERON:0002393
+name: pharyngotympanic tube
+def: "Organ with organ cavity which connects the cavity of the middle ear to the cavity of the pharynx. Examples: There are only two pharyngotympanic tubes, the right and the left pharyngotympanic tubes.[FMA]" [FMA:FMA, http://en.wikipedia.org/wiki/Eustachian_tube]
+subset: organ_slim
+--
+property_value: structure_notes "The internal intercostals are responsible for the depression of the ribs decreasing the transverse dimensions of the thoracic cavity. the innermost intercostal muscle, the deep layers of the internal intercostal muscles which are separated from them by the neurovascular bundle. Both the external and internal muscles are innervated by the intercostal nerves, and are provided by the intercostal arteries and intercostal veins. Their fibers run in opposite directions" xsd:string
+
+[Term]
+id: UBERON:0002404
+name: transversus thoracis
+def: "The tranversus thoracis lies internal to the thoracic cage, anteriorly. It is a thin plane of muscular and tendinous fibers, situated upon the inner surface of the front wall of the chest. It is in the same layer as the subcostal muscles. It arises on either side from the lower third of the posterior surface of the body of the sternum, from the posterior surface of the xiphoid process, and from the sternal ends of the costal cartilages of the lower three or four true ribs. Its fibers diverge upward and lateralward, to be inserted by slips into the lower borders and inner surfaces of the costal cartilages of the second, third, fourth, fifth, and sixth ribs. The lowest fibers of this muscle are horizontal in their direction, and are continuous with those of the Transversus abdominis; the intermediate fibers are oblique, while the highest are almost vertical. This muscle varies in its attachments, not only in different subjects, but on opposite sides of the same subject. [WP,unvetted]." [http://en.wikipedia.org/wiki/Transversus_thoracis]
+subset: organ_slim
+--
+property_value: homology_notes "From comparative analyses of craniate brains, a morphotype of the brain in the earliest craniate stock can be constructed. In marked contrast to cephalochordates, the ancestral craniate morphotype had a plethora of unique features, which included a telencephalon with pallial and subpallial parts, paired olfactory bulbs with substantial projections to most or all of the telencephalic pallium, paired lateral eyes and ears, a lateral line system for both electroreception and mechanoreception, spinal cord dorsal root ganglia, and an autonomic nervous system.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000396", ontology="VHOG", source="http://bgee.unil.ch/", source="DOI:10.1002/1097-0185(20000615)261:3<111::AID-AR6>3.0.CO;2-F Butler AB, Chordate evolution and the origin of craniates: An old brain in a new head. AnaT Rec (New Anat) (2000)"}
+
+[Term]
+id: UBERON:0002411
+name: clitoris
+def: "the small, erectile body located at the anterior end of the vulva" [ISBN:0-683-40008-8, MP:0003127]
+subset: organ_slim
+--
+property_value: homology_notes "Phylogenetic analysis suggests that cartilage arose independently in cnidarians, hemichordates, vertebrates, arthropods, annelids, brachiopods, and molluscs - or a common ancestor of brachiopods and molluscs (...). Analyses of cartilage as a tissue and of the development of invertebrate cartilages are consistent with homology between invertebrate and vertebrate cartilage. From the discussion above, it will be clear that understanding genetic changes underlying cartilage evolution is key to determining whether the multiple origins of cartilage represent parallel evolution.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0001207", ontology="VHOG", source="http://bgee.unil.ch/", source="DOI:10.1111/j.1525-142X.2011.00520.x Hall BK, Parallelism, deep homology, and evo-devo. Evolution and Development (2012)"}
+
+[Term]
+id: UBERON:0002419
+name: skin gland
+def: "A gland that is part of a skin of body [Automatically generated definition]." [OBOL:automatic]
+subset: organ_slim
+--
+property_value: editor_note "TODO - check mp syn" xsd:string
+
+[Term]
+id: UBERON:0002451
+name: endometrial gland
+def: "The mucous secreting gland associated with the mucuous membrane lining the uterus." [http://en.wikipedia.org/wiki/Uterine_glands]
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0002518
+name: otolith organ
+def: "the crystalline particles composed of calcium carbonate and a protein which adhere to the gelatinous membrane of the maculae of the utricle and saccule (otolithic membrane)" [ISBN:0-683-40008-8, MGI:llw2, MP:0002894]
+subset: efo_slim
+subset: organ_slim
+--
+property_value: external_definition "Organism subdivision which is the collection of anatomical structures on the body surface.[ZFA]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000292", ontology="TAO", source="ZFIN:curator"}
+
+[Term]
+id: UBERON:0003103
+name: compound organ
+def: "Anatomical structure that has as its parts two or more multi-tissue structures of at least two different types and which through specific morphogenetic processes forms a single distinct structural unit demarcated by bona fide boundaries from other distinct anatomical structures of different types." [CARO:0000024]
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0003133
+name: reproductive organ
+def: "An organ involved in reproduction" [UBERON:xp]
+subset: functional_classification
+subset: organ_slim
+--
+property_value: external_ontology_notes "GO uses genitalia for the singular organ" xsd:string {external_ontology="GO"}
+
+[Term]
+id: UBERON:0003134
+name: female reproductive organ
+def: "A female organ involved in reproduction" [UBERON:xp]
+subset: organ_slim
+--
+relationship: part_of UBERON:0000474 ! female reproductive system
+
+[Term]
+id: UBERON:0003135
+name: male reproductive organ
+def: "A male organ involved in reproduction" [UBERON:xp]
+subset: organ_slim
+--
+property_value: editor_note "check ZFA, placemeant, appears to refer to both adult structures and primordium" xsd:string
+
+[Term]
+id: UBERON:0003250
+name: rectus capitis lateralis muscle
+def: "A muscle that arises from the upper surface of the transverse process of the atlas and inserts into the under surface of the jugular process of the occipital bone." [http://en.wikipedia.org/wiki/Rectus_capitis_lateralis_muscle]
+subset: organ_slim
+--
+relationship: part_of UBERON:0001041 ! foregut
+
+[Term]
+id: UBERON:0003295
+name: pharyngeal gland
+def: "Racemose mucous glands beneath the mucous membrane of the pharynx." [http://www.biology-online.org/dictionary/]
+subset: organ_slim
+--
+relationship: part_of UBERON:0001723 ! tongue
+
+[Term]
+id: UBERON:0003410
+name: oropharyngeal gland
+def: "A gland that is part of a oropharynx [Automatically generated definition]." [OBOL:automatic]
+subset: organ_slim
+--
+relationship: part_of UBERON:0002370 ! thymus
+
+[Term]
+id: UBERON:0003484
+name: eye sebaceous gland
+def: "A sebaceous gland that is part of a camera-type eye. Example: a tarsal gland." [http://orcid.org/0000-0002-6601-2165]
+subset: organ_slim
+--
+intersection_of: part_of UBERON:0000019 ! camera-type eye
+
+[Term]
+id: UBERON:0003485
+name: vagina sebaceous gland
+def: "A sebaceous gland that is part of a vagina [Automatically generated definition]." [OBOL:automatic]
+subset: organ_slim
+--
+relationship: part_of UBERON:0001292 {source="MA"} ! distal convoluted tubule
+
+[Term]
+id: UBERON:0003547
+name: brain meninx
+def: "A meninx that is part of a brain [Automatically generated definition]." [OBOL:automatic]
+subset: organ_slim
+--
+property_value: homology_notes "In fishes, the meninges consist of a single membrane, the primitive meninx, wrapped around the brain and spinal cord. With the adoption of terrestrial life, the meninges doubled. In amphibians, reptiles, and birds, the meninges include a thick outer dura mater derived from mesoderm and a thin inner secondary meninx. (...) In mammals, the dura mater persists, but division of the secondary meninx yields both the arachnoid and the pia mater from ectomesoderm.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000466", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0072528305 Kardong KV, Vertebrates: Comparative Anatomy, Function, Evolution (2006) p.639"}
+
+[Term]
+id: UBERON:0003555
+name: spinal cord pia mater
+def: "A pia mater that is part of a spinal cord [Automatically generated definition]." [OBOL:automatic]
+subset: organ_slim
+--
+property_value: homology_notes "In fishes, the meninges consist of a single membrane, the primitive meninx, wrapped around the brain and spinal cord. With the adoption of terrestrial life, the meninges doubled. In amphibians, reptiles, and birds, the meninges include a thick outer dura mater derived from mesoderm and a thin inner secondary meninx. (...) In mammals, the dura mater persists, but division of the secondary meninx yields both the arachnoid and the pia mater from ectomesoderm.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000236", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0072528305 Kardong KV, Vertebrates: Comparative Anatomy, Function, Evolution (2006) p.639"}
+
+[Term]
+id: UBERON:0003560
+name: spinal cord arachnoid mater
+def: "An arachnoid mater that is part of a spinal cord [Automatically generated definition]." [OBOL:automatic]
+subset: organ_slim
+--
+property_value: taxon_notes "in mammals the rings are incomplete, in avians the rings are complete." xsd:string
+
+[Term]
+id: UBERON:0003605
+name: eye skin gland
+def: "A skin gland that is part of a camera-type eye [Automatically generated definition]." [OBOL:automatic]
+subset: organ_slim
+--
+intersection_of: part_of UBERON:0001710 ! lower jaw region
+
+[Term]
+id: UBERON:0003668
+name: synovial bursa
+def: "A small fluid-filled sac lined by synovial membrane with an inner capillary layer of slimy fluid. It provides a cushion between bones and tendons and/or muscles around a joint. This helps to reduce friction between the bones and allows free movement. Bursae are filled with synovial fluid and are found around most major joints of the body." [http://en.wikipedia.org/wiki/Synovial_bursa]
+subset: organ_slim
+--
+relationship: depicted_by Subtalar:Joint.PNG
+
+[Term]
+id: UBERON:0003699
+name: pubic symphysis
+def: "The firm fibrocartilaginous joint in the median plane between the two opposing surfaces of the pubic bones, which are united by an interpubic disc of fibrocartilage as well as the superior and arcuate pubic ligaments." [http://en.wikipedia.org/wiki/Pubic_symphysis, MP:0009575]
+subset: organ_slim
+--
+relationship: part_of UBERON:0003931 ! diencephalic white matter
+
+[Term]
+id: UBERON:0003937
+name: reproductive gland
+def: "Any of the organized aggregations of cells that function as secretory or excretory organs and are associated with reproduction." [MP:0000653]
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0003975
+name: internal female genitalia
+def: "The internal feminine genital organs, including the ovaries, uterine tubes, uterus, uterine cervix, and vagina." [MP:0009209]
+comment: TODO: Relabel. Make distinct organ class. See https://github.com/obophenotype/uberon/issues/547
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0004053
+name: external male genitalia
+def: "The external masculine genital organs, including the penis and scrotum" [MP:0009199]
+comment: TODO: Relabel. Make distinct organ class. See https://github.com/obophenotype/uberon/issues/547
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0004054
+name: internal male genitalia
+def: "The internal masculine genital organs, including the testes, epididymides, deferent ducts, seminal vesicles, prostate, ejaculatory ducts, and bulbourethral glands" [MP:0009205]
+comment: TODO: Relabel. Make distinct organ class. See https://github.com/obophenotype/uberon/issues/547
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0004175
+name: internal genitalia
+def: "The internal genitalia are the internal sex organs such as the uterine tube, the uterus and the vagina in female mammals, and the testis, seminal vesicle, ejaculatory duct and prostate in male mammals" [GO:0035260]
+comment: TODO: make a subdivision of reproductive system. Relabel. See https://github.com/obophenotype/uberon/issues/547
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0004176
+name: external genitalia
+def: "The external genitalia are the outer sex organs, such as the penis or vulva in mammals" [GO:0035261]
+comment: TODO: make a subdivision of reproductive system. Relabel. See https://github.com/obophenotype/uberon/issues/547
+subset: organ_slim
+--
+is_a: UBERON:0003133 ! reproductive organ
+
+[Term]
+id: UBERON:0004177
+name: hemopoietic organ
+def: "Organ that is part of the hematopoietic system." [GOC:Obol]
+subset: organ_slim
+--
+property_value: taxon_notes "In bony fish, or teleosts, it has been proposed that the cerebellar auricles, which receive a large amount of input from the vestibulolateral line system, constitute the vestibulocerebellum and are homologues of the flocculonodular lobe of higher vertebrates along with the corpus cerebelli, which receives spinocerebellar and tectocerebellar fibers. The labyrinth and the lateral line organs of lampreys have structural and functional similarity. An important difference between the two structures is that the arrangement of the lateral line organs are such that they are sensitive to relative motion of the fluid surrounding the animal, whereas the labyrinths, having very similar sensing mechanisms, are sensitive to endolymph, providing information concerning the animal's own equilibrium of the body and orientation in space" xsd:string {source="WP"}
+
+[Term]
+id: UBERON:0004721
+name: crista ampullaris
+def: "The crista ampullaris is the sensory organ of rotation located in the semicircular canal of the inner ear. The function of the crista ampullaris is to sense angular acceleration and deceleration." [http://en.wikipedia.org/wiki/Crista_ampullaris]
+subset: organ_slim
+--
+relationship: has_part UBERON:0004755 ! skeletal tissue
+
+[Term]
+id: UBERON:0004760
+name: gland of anal canal
+def: "A gland that is part of an anal canal [Automatically generated definition]." [http://en.wikipedia.org/wiki/Anal_gland, OBOL:automatic]
+subset: organ_slim
+--
+property_value: external_ontology_notes "note the distinction between intramembranous bone and intramembranous bone tissue. Some bones may be a mixture of both tissue types. The MA class most likely refers to a tissue type (it is under bone tissue and connective tissue; there are no child classes)" xsd:string {external_ontology="MA"}
+
+[Term]
+id: UBERON:0004765
+name: skeletal element
+def: "Organ consisting of skeletal tissue. Encompasses whole bones, fused bones, cartilaginious elements, teeth, dermal denticles." [https://orcid.org/0000-0002-6601-2165]
+subset: organ_slim
+--
+property_value: taxon_notes "In addition to tetrapods, the lungfish has internal nostrils too. In tetrapods the exhalant nostril (choana) empties into the buccal cavity." xsd:string
+
+[Term]
+id: UBERON:0004772
+name: eyelid tarsus
+def: "The tarsi (tarsal plates) are two comparatively thick, elongated plates of dense connective tissue, about 2.5 cm. in length; one is found in each eyelid, and contributes to its form and support. They directly abut the lid margins." [http://en.wikipedia.org/wiki/Tarsus_(eyelids)]
+subset: organ_slim
+--
+relationship: part_of UBERON:0001824 ! mucosa of larynx
+
+[Term]
+id: UBERON:0004790
+name: skin mucous gland
+def: "A mucous gland that is part of the skin." [http://orcid.org/0000-0002-6601-2165]
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0004859
+name: eye gland
+def: "A gland that is part of a eye. The eye is a compound unit which depending on the species may consist of an eyeballs plus associated ducts and integumentary structures. Eye glands therefore include the various types of lacrimal gland, the various types of apocrine and sebaceous glands associated with the eyelid." [http://orcid.org/0000-0002-6601-2165]
+comment: Examples: harderian gland, accessory lacrimal gland, gland of Moll, gland of Zeis, nictitating membrane glands
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0005056
+name: external female genitalia
+def: "An external genitalia that is part of a female reproductive system [Automatically generated definition]." [OBOL:automatic]
+comment: TODO: Relabel. Make distinct organ class. See https://github.com/obophenotype/uberon/issues/547
+subset: organ_slim
+--
+property_value: taxon_notes "in eutherians, this is known as the vulva in and composed of the mons pubis, the labia majora and minora, the clitoris, the vestibule of the vagina and its glands, and the opening of the urethra and of the vagina [MP:0003126]" xsd:string
+
+[Term]
+id: UBERON:0005057
+name: immune organ
+def: "An organ that is part of a immune system [Automatically generated definition]." [OBOL:automatic]
+subset: organ_slim
+--
+relationship: part_of UBERON:0002405 ! immune system
+
+[Term]
+id: UBERON:0005058
+name: hemolymphoid system gland
+def: "A gland that is part of a hemolymphoid system [Automatically generated definition]." [OBOL:automatic]
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0005175
+name: chest organ
+def: "An organ that is part of a chest [Automatically generated definition]." [OBOL:automatic]
+subset: non_informative
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0005177
+name: trunk region element
+def: "An organ or element that part of the trunk region. The trunk region can be further subdividied into thoracic (including chest and thoracic cavity) and abdominal (including abdomen and pelbis) regions." [http://orcid.org/0000-0002-6601-2165]
+subset: non_informative
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0005179
+name: pelvic region element
+def: "An organ or element that is part of the pelvic region. Examples: reproductive organs (in some organisms), urinary bladder, bones of the pelvis." [http://orcid.org/0000-0002-6601-2165]
+subset: non_informative
+subset: organ_slim
+--
+property_value: editor_note "TODO - unify terminology - check DST = TAL? Note EMAPA class appears to refer to this segment" xsd:string
+
+[Term]
+id: UBERON:0005203
+name: trachea gland
+def: "a tubuloacinar seromucous gland that is located principally in the submucosa of the trachea. Excretory ducts from this gland pass through the lamina propria to the tracheal lumen." [http://medical-dictionary.thefreedictionary.com/tracheal+glands, http://www.ncbi.nlm.nih.gov/pubmed/15973734, https://github.com/obophenotype/uberon/issues/1197, ISBN:1451113412, MGI:Anna]
+subset: organ_slim
+--
+property_value: function_notes "These glands secrete mucus, lysozyme, defensins, and other agents that help protect the lungs from particles and infectious agents." xsd:string
+
+[Term]
+id: UBERON:0005204
+name: larynx submucosa gland
+def: "A gland that is part of a larynx submucosa [Automatically generated definition]." [OBOL:automatic]
+subset: organ_slim
+--
+property_value: homology_notes "The ureteric bud itself forms the collecting tubules and the ureter that drain the adult kidney. This type of kidney, called the metanephros, occurs in all adult amniotes.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000945", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.639"}
+
+[Term]
+id: UBERON:0005250
+name: stomatodeum gland
+def: "A gland that is part of a stomodeum." [OBOL:automatic]
+subset: organ_slim
+--
+property_value: homology_notes "In fishes, the meninges consist of a single membrane, the primitive meninx, wrapped around the brain and spinal cord. With the adoption of terrestrial life, the meninges doubled. In amphibians, reptiles, and birds, the meninges include a thick outer dura mater derived from mesoderm and a thin inner secondary meninx. (...) In mammals, the dura mater persists, but division of the secondary meninx yields both the arachnoid and the pia mater from ectomesoderm.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000230", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0072528305 Kardong KV, Vertebrates: Comparative Anatomy, Function, Evolution (2006) p.639"}
+
+[Term]
+id: UBERON:0005398
+name: female reproductive gland
+def: "A sex gland that is part of a female reproductive system." [OBOL:automatic]
+subset: organ_slim
+--
+relationship: part_of UBERON:0003134 ! female reproductive organ
+
+[Term]
+id: UBERON:0005399
+name: male reproductive gland
+def: "A sex gland that is part of a male reproductive system." [OBOL:automatic]
+subset: organ_slim
+--
+property_value: structure_notes "They extend from the tubercles of the ribs behind, to the cartilages of the ribs in front, where they end in thin membranes, the anterior intercostal membranes, which are continued forward to the sternum. Each arises from the lower border of a rib, and is inserted into the upper border of the rib below. In the two lower spaces they extend to the ends of the cartilages, and in the upper two or three spaces they do not quite reach the ends of the ribs. They are thicker than the Intercostales interni, and their fibers are directed obliquely downward and laterally on the back of the thorax, and downward, forward, and medially on the front (the example is often used of sticking one's hands in their pocket and noting the direction of the fingers pointing downward and medially)" xsd:string
+
+[Term]
+id: UBERON:0005442
+name: abdominal external oblique muscle
+def: "The lateral abdominal wall muscle that is the most superficial, immediately superficial to the internal oblique." [ISBN:9781435464339, UBERON:cjm]
+subset: organ_slim
+--
+relationship: part_of UBERON:0035770 ! inferior mesenteric nerve plexus
+
+[Term]
+id: UBERON:0005454
+name: abdominal internal oblique muscle
+def: "The lateral abdominal wall muscle that is deep to the external oblique and superficial to the transversus." [ISBN:9781435464339, UBERON:cjm]
+subset: organ_slim
+--
+property_value: taxon_notes "Conical in shape, with the cone extending inwards (e.g. mammals) or outwards (e.g. in birds)" xsd:string {source="me:saf.html"}
+
+[Term]
+id: UBERON:0006723
+name: cochlear modiolus
+def: "the central cone shaped core of spongy bone about which turns the spiral canal" [ISBN:0-683-40008-8, MGI:anna, MP:0003309]
+subset: organ_slim
+--
+is_a: UBERON:0019263 ! gray matter of hindbrain
+relationship: part_of UBERON:0002132 ! dentate nucleus
+
+[Term]
+id: UBERON:0006749
+name: superior parathyroid gland
+subset: organ_slim
+--
+relationship: in_lateral_side_of UBERON:0000949 {source="FMA-abduced-lr"} ! endocrine system
+property_value: taxon_notes "Mammals typically have four parathyroids, while other groups typically have six" xsd:string
+
+[Term]
+id: UBERON:0006755
+name: inferior parathyroid gland
+subset: organ_slim
+--
+relationship: part_of UBERON:0009916 {source="FMA"} ! wall of ureter
+
+[Term]
+id: UBERON:0006856
+name: interrenal gland
+def: "Structures in fishes homologous to the cortical tissue of the mammalian adrenal gland; they are in close proximity to or imbedded in the head kidney." [BTO:0000808, https://doi.org/10.1242/dev.00427]
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0006858
+name: adrenal/interrenal gland
+def: "This gland can either be a discrete structure located bilaterally above each kidney, or a cluster of cells in the head kidney that perform the functions of the adrenal gland. In either case, this organ consists of two cells types, aminergic chromaffin cells and steroidogenic cortical cells[GO]" [GO:0030325]
+subset: homology_grouping
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0006868
+name: seminal fluid secreting gland
+def: "A gland that secretes a seminal fluid." [OBOL:automatic]
+subset: grouping_class
+subset: organ_slim
+--
+property_value: editor_note "we follow Kardong in treating the glandular epithelium as a distinct entity, and thus as an epithelium which has glands; FMA has 'epithelium of gastric gland', which is part of the gastric gland." xsd:string
+
+[Term]
+id: UBERON:0006925
+name: digestive system gland
+def: "Any gland that is part of the digestive system." [UBERON:cjm]
+subset: organ_slim
+--
+is_a: UBERON:0006972 ! nephridium
+
+[Term]
+id: UBERON:0006976
+name: peptonephridium
+def: "Organs opening into the buccal cavity of pharynx (supposedly modified nephridia) of invertebrates." [BTO:0004280]
+subset: organ_slim
+--
+relationship: develops_from UBERON:0003064 ! intermediate mesoderm
+
+[Term]
+id: UBERON:0007132
+name: head kidney
+def: "Teleost head kidney consists of fused bilateral lobes located in the anterior part of the kidney. It is analogous to the mammalian bone marrow and the primary site of definitive hematopoiesis[ZFA,modified]." [https://doi.org/10.1242/dev.00427, ZFIN:ZDB-PUB-040923-1]
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0007196
+name: tracheobronchial tree
+alt_id: UBERON:0004102
+def: "The structure from the trachea, bronchi, and bronchioles that forms the airways that supply air to the lungs. The lining of the tracheobronchial tree consists of ciliated columnar epithelial cells." [http://en.wikipedia.org/wiki/Tracheobronchial_tree]
+subset: organ_slim
+--
+relationship: produced_by UBERON:0007773 ! scrotal sweat gland
+
+[Term]
+id: UBERON:0007773
+name: scrotal sweat gland
+def: "Any sweat gland that is part of a scrotum." [OBOL:automatic]
+subset: organ_slim
+--
+property_value: external_definition "Posteriorly directed process (occasionally directed anteriorly) usually associated with the rib (sometimes with the transverse process) of the third vertebra; they provide the origin of the mm serratus superior, medius, and inferior.[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0000741", ontology="AAO", source="AAO:Pugener_2002"}
+
+[Term]
+id: UBERON:0007844
+name: cartilage element
+def: "Skeletal element that is composed of cartilage tissue and may be permanent or transient." [GO_REF:0000034, http://dx.plos.org/10.1371/journal.pone.0051070, PSPUB:0000170, VSAO:0000000]
+subset: organ_slim
+--
+property_value: curator_notes "this class includes any endothelia that are part of the heart. This might include the endocardial epithelia, as well as endothelia of vessels that are considered strictly part of the heart (e.g. outflow tract). As a grouping class, this may lack utility, and pending review this class may be obsoleted. For annotation consider a more specific class." xsd:string
+
+[Term]
+id: UBERON:0008310
+name: nasopharyngeal gland
+def: "A gland that is part of a nasopharynx." [OBOL:automatic]
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0008811
+name: intromittent organ
+def: "An external organ of a male organism that is specialized to deliver sperm during copulation. Intromittent organs are found most often in terrestrial species, as most aquatic species fertilize their eggs externally, although there are exceptions[WP]." [http://en.wikipedia.org/wiki/Intromittent_organ]
+subset: grouping_class
+subset: organ_slim
+--
+relationship: part_of UBERON:0001166 {source="Wikipedia"} ! pylorus
+
+[Term]
+id: UBERON:0008859
+name: cardiac gastric gland
+def: "A gastric gland in the cardiac region of the stomach; cardiac glands are fewer in number than in the fundus and body, and secrete mucin which coats the stomach and protects it[MP]" [http://en.wikipedia.org/wiki/Cardiac_glands, MP:0010795]
+subset: organ_slim
+--
+relationship: part_of UBERON:0001155 {source="BTO"} ! colon
+
+[Term]
+id: UBERON:0008974
+name: apocrine gland
+def: "any exocrine gland whose cells bud their secretions off through the plasma membrane producing membrane-bound vesicles in the lumen; the apical portion of the secretory cell of the gland pinches off and enters the lumen; it loses part of its cytoplasm in their secretions; apocrine secretion is functional during hormonal stress or puberty; an example of true apocrine glands are mammary glands, responsible for secreting breast milk." [MGI:anna]
+subset: organ_slim
+--
+property_value: editor_note "consider merging with fibrocartilage" xsd:string
+
+[Term]
+id: UBERON:0009014
+name: lower back skin
+def: "A zone of skin that is part of a lower back." [OBOL:automatic]
+subset: organ_slim
+--
+is_obsolete: true
+
+[Term]
+id: UBERON:0009114
+name: cervical thymus
+def: "A mature thymus that is entirely part of the cervical region." [https://orcid.org/0000-0002-6601-2165]
+subset: organ_slim
+--
+property_value: taxon_notes "A cervical thymus is a pathological structure in a human - it can form during the migration of the thymus to its location in the mediastinum. Some mice have a cervical thymus. There are examples of cervical thymi in marsupials and prosimians[ISBN:0781714125]" xsd:string
+
+[Term]
+id: UBERON:0009115
+name: thoracic thymus
+def: "A mature thymus that is entirely part of thoracic region." [https://orcid.org/0000-0002-6601-2165]
+subset: organ_slim
+--
+
+[Term]
+id: UBERON:0009117
+name: indifferent gonad
+def: "A gonad prior to differentiating into a definitive testis or ovary." [http://www.medterms.com/script/main/art.asp?articlekey=8981]
+comment: typically part of the embryo - however, in male tammar wallabies the gonads are indifferent at the neonatal stage[8827321]
+subset: organ_slim
+--
+relationship: develops_from UBERON:0006217 {source="EHDAA2"} ! cloacal membrane
+relationship: part_of UBERON:0001353 {source="EHDAA2"} ! anal region
+
+[Term]
+id: UBERON:0009196
+name: indifferent external genitalia
+subset: organ_slim
+--
+intersection_of: part_of UBERON:0001154 ! vermiform appendix
+relationship: part_of UBERON:0004989 ! mucosa of appendix
+
+[Term]
+id: UBERON:0009708
+name: dorsal pancreas
+subset: organ_slim
+--
+relationship: has_developmental_contribution_from UBERON:0003923 {source="cjm"} ! dorsal pancreatic bud
+relationship: part_of UBERON:0001264 {source="EHDAA2"} ! pancreas
+
+[Term]
+id: UBERON:0009709
+name: ventral pancreas
+subset: organ_slim
